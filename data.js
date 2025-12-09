@@ -2998,6 +2998,7 @@ const problemDB = [
         round: "1",
         level: "고졸",
         subject: "과학",
+        image: "images/2025_1_Sci_17.png",
         question: "17. 종 다양성이 가장 높은 지역은?<br>(모든 종이 골고루 분포한 지역 찾기)",
         options: ["(가)", "(나)", "(다)", "(라)"],
         answer: 3,
@@ -3020,6 +3021,7 @@ const problemDB = [
         round: "1",
         level: "고졸",
         subject: "과학",
+        image: "images/2025_1_Sci_19.png",
         question: "19. 생태계 먹이 관계 설명으로 옳은 것은?<br>풀 ➡ 토끼 ➡ 매",
         options: ["풀은 생산자이다.", "토끼는 2차 소비자이다.", "참새가 사라지면...", "매가 사라지면..."],
         answer: 0,
@@ -3097,6 +3099,7 @@ const problemDB = [
         explanation: "고생대에는 삼엽충(바다)과 양치식물(고사리, 육지)이 번성했습니다. (공룡은 중생대)<br><br>🍯 <b>[암기 꿀팁]</b> <b>고생대 = 고사리(양치식물)</b>. ㄱ-ㄱ으로 외우세요!"
     }
 ];
+
 
 
 
