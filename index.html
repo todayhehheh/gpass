@@ -174,9 +174,26 @@
             }
 
             if (currentProblems.length === 0) {
-                alert("해당 조건의 문제가 없습니다. (data.js에 데이터가 있는지 확인해주세요)");
-                return;
-            }
+                // 1. 문제 화면을 일단 보여줍니다.
+                showPage('page-quiz');
+    
+                // 2. 제목을 "준비 중"으로 바꿉니다.
+                document.getElementById('quiz-info-text').innerText = "🚧 데이터 준비 중";
+    
+                // 3. 내용을 예쁜 안내 문구로 채웁니다.
+                const container = document.getElementById('quiz-container');
+                container.innerHTML = `
+                    <div class="text-center py-20">
+                        <div class="text-6xl mb-4">🙏</div>
+                        <h3 class="text-xl font-bold mb-2">아직 문제가 등록되지 않았어요.</h3>
+                        <p class="text-slate-500 mb-6">조금만 기다려주세요! 곧 업데이트 될 예정입니다.</p>
+                        <button onclick="goHome()" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold">돌아가기</button>
+                    </div>
+                `;
+                // 4. 점수판은 숨깁니다.
+                document.getElementById('score-board').classList.add('hidden');
+    return;
+}
 
             showPage('page-quiz');
             document.getElementById('quiz-info-text').innerText = `${year}년 ${round}차 ${subject} (${currentMode === 'study' ? '공부' : '시험'})`;
@@ -302,3 +319,4 @@
 </body>
 
 </html>
+
