@@ -544,7 +544,7 @@ const problemDB = [
         question: "1. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것은?",
         options: ["감정", "균형", "모험", "학습"],
         answer: 1,
-        explanation: "work(일)와 family life(가정) 사이에는 '균형'이 필요하겠죠?<br><br>🍯 <b>[단어 꿀팁]</b> <b>Balance = 밸런스 = 균형</b>. '워라밸(Work-Life Balance)' 할 때 그 밸런스입니다!"
+        explanation: "일(work)과 가정생활(family life) 사이에는 '균형'이 필요합니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Balance = 밸런스 = 균형</b>. '워라밸'의 밸런스입니다!"
     },
     {
         id: 2025230302,
@@ -552,13 +552,13 @@ const problemDB = [
         round: "2",
         level: "고졸",
         subject: "영어",
-        passage: "<b>A:</b> I accidentally broke the classroom window.<br><b>B:</b> Oh, no! Did you tell the teacher?<br><b>A:</b> Yes, I told her what happened and apologized.<br><b>B:</b> Good. <u>Honesty is the best policy.</u>",
+        passage: "Please <u>throw away</u> the trash after the picnic.",
         question: "2. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것은?",
-        options: ["정직이 최선의 방책이다.", "진정한 배움에는 지름길이 없다.", "시간은 화살처럼 빨리 지나간다.", "일찍 일어나는 새가 벌레를 잡는다."],
+        options: ["버리다", "들여놓다", "보관하다", "판매하다"],
         answer: 0,
-        explanation: "Honesty(정직)라는 단어만 알면 풀 수 있습니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Honesty = 정직</b>. 보기 중에 '정직' 들어간 건 1번밖에 없네요."
+        explanation: "소풍 후에 쓰레기(trash)는 '버려야(throw away)' 합니다.<br><br>🍯 <b>[숙어 꿀팁]</b> <b>Throw(던지다) + Away(멀리)</b> = <b>버리다</b>."
     },
-{
+    {
         id: 2025230303,
         year: "2025",
         round: "2",
@@ -568,7 +568,7 @@ const problemDB = [
         question: "3. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것은?",
         options: ["게다가", "그래서", "반면에", "사실상"],
         answer: 1,
-        explanation: "앞 문장(열심히 공부했다)이 원인이고, 뒤 문장(시험에 합격했다)이 결과입니다. 원인과 결과를 이어주는 접속사는 'so(그래서)'입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>So = 그래서</b>. S-O-S 칠 때처럼 급박하게 '그래서! 그래서!' 외우면 쉽습니다."
+        explanation: "열심히 공부했다(원인) ➡ (그래서) ➡ 시험에 합격했다(결과). 인과관계를 나타내는 접속사입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>So = 그래서</b>."
     },
     {
         id: 2025230304,
@@ -580,7 +580,7 @@ const problemDB = [
         question: "4. 다음 중 밑줄 친 두 단어의 의미 관계와 다른 것은?",
         options: ["slow - fast", "wide - narrow", "equal - same", "easy - difficult"],
         answer: 2,
-        explanation: "Happy(기쁨) ↔ Sad(슬픔)은 반대말입니다. 3번 Equal(동등한) = Same(같은)은 유의어(비슷한 말)입니다.<br><br>🍯 <b>[문제 꿀팁]</b> 보기 4개 중 <b>혼자 성격이 다른 녀석</b>(반대말들 사이에 낀 비슷한 말)을 찾으세요."
+        explanation: "Happy(기쁨) ↔ Sad(슬픔)는 반대말 관계입니다. 3번 Equal(동등한) = Same(같은)은 유의어(비슷한 말) 관계입니다.<br><br>🍯 <b>[문제 꿀팁]</b> 보기 중 <b>혼자 성격이 다른 하나(유의어)</b>를 찾으세요."
     },
     {
         id: 2025230305,
@@ -588,11 +588,11 @@ const problemDB = [
         round: "2",
         level: "고졸",
         subject: "영어",
-        passage: "<b>Mud Fun Day</b><br>• Date: August 16th<br>• Place: Riverside Park<br>• Activities: mud slides, mud fights<br>* Make sure to bring a change of clothes.",
+        passage: "<b>Mud Fun Day</b><br>• Date: August 16th<br>• Place: Riverside Park<br>• Activities: mud slides, mud fights<br>• Make sure to bring a change of clothes.",
         question: "5. 다음 안내문에서 언급되지 않은 것은?",
         options: ["행사 날짜", "행사 장소", "활동 내용", "참가 연령"],
         answer: 3,
-        explanation: "Date(날짜), Place(장소), Activities(활동)는 있지만 Age(나이) 정보는 없습니다.<br><br>🍯 <b>[독해 꿀팁]</b> 영어 단어랑 보기를 <b>일대일로 매칭</b>해보세요. 없는 게 정답!"
+        explanation: "Date(날짜), Place(장소), Activities(활동)는 나와 있지만, Age(나이)에 대한 언급은 없습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>영어 단어와 보기를 짝짓기</b> 하세요. 짝이 없는 게 정답!"
     },
     {
         id: 2025230306,
@@ -604,7 +604,7 @@ const problemDB = [
         question: "6. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?",
         options: ["run", "hand", "will", "lose"],
         answer: 0,
-        explanation: "달리기를 하다(Run), 가게를 운영하다(Run). Run은 '달리다' 말고 '운영하다'라는 뜻도 있습니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Run a shop = 가게를 운영하다</b>. 검정고시 단골 표현이니 꼭 외워두세요!"
+        explanation: "Go for a run (달리러 가다), Run a shop (가게를 운영하다).<br><br>🍯 <b>[단어 꿀팁]</b> <b>Run</b>은 '달리다' 말고 <b>'운영하다'</b>라는 뜻도 있습니다. (가게, 회사 등)"
     },
     {
         id: 2025230307,
@@ -616,7 +616,7 @@ const problemDB = [
         question: "7. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?",
         options: ["how", "why", "where", "which"],
         answer: 1,
-        explanation: "Reason(이유) 뒤에는 Why(왜)가 옵니다. '이유는 왜냐하면...' 자연스럽죠?<br><br>🍯 <b>[문법 꿀팁]</b> <b>Reason(이유)</b> 짝꿍은 <b>Why(왜)</b>! Time(시간)은 When, Place(장소)는 Where."
+        explanation: "The reason(이유) 뒤에는 관계부사 Why가 옵니다. '네가 결석한 이유(Why)를 말해줄래?'<br><br>🍯 <b>[문법 꿀팁]</b> <b>Reason(이유)</b> 짝꿍은 <b>Why(왜)</b>!"
     },
     {
         id: 2025230308,
@@ -628,7 +628,7 @@ const problemDB = [
         question: "8. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?",
         options: ["as", "to", "for", "like"],
         answer: 1,
-        explanation: "Look forward to (~를 고대하다), Used to (~하곤 했다). 둘 다 to를 씁니다.<br><br>🍯 <b>[숙어 꿀팁]</b> <b>'~ 투(~to)'</b>로 끝나는 숙어들을 입에 붙이세요. 유즈드 투, 룩 포워드 투!"
+        explanation: "Look forward to (~을 고대하다), Used to (~하곤 했다). 둘 다 전치사 'to'를 씁니다.<br><br>🍯 <b>[숙어 꿀팁]</b> <b>'~ 투(~to)'</b> 세트! <b>Look forward to</b>, <b>Used to</b>."
     },
     {
         id: 2025230309,
@@ -640,7 +640,7 @@ const problemDB = [
         question: "9. 다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?",
         options: ["정직이 최선의 방책이다.", "진정한 배움에는 지름길이 없다.", "시간은 화살처럼 빨리 지나간다.", "일찍 일어나는 새가 벌레를 잡는다."],
         answer: 0,
-        explanation: "창문을 깼지만 솔직하게 말하고 사과했다는 A에게 '잘했다'며 해주는 말입니다.<br><br>🍯 <b>[속담 꿀팁]</b> <b>Honesty(정직)</b>는 <b>Best Policy(최고의 방책)</b>. 정직이 최고입니다!"
+        explanation: "실수를 솔직하게 말하고 사과한 A에게 '정직한 게 최고야'라고 말해주는 상황입니다.<br><br>🍯 <b>[속담 꿀팁]</b> <b>Honesty(정직)</b>는 <b>Best Policy(최고의 방책)</b>."
     },
     {
         id: 2025230310,
@@ -652,7 +652,7 @@ const problemDB = [
         question: "10. 다음 대화에서 알 수 있는 A의 심정으로 가장 적절한 것은?",
         options: ["기쁨", "불만", "실망", "평온"],
         answer: 0,
-        explanation: "'Won(상 탔다)', 'Delighted(기쁘다)'라는 표현에서 A의 기쁨을 알 수 있습니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Won(이겼다/상탔다)</b> + <b>Delighted(매우 기쁜)</b> = <b>'기쁨'</b>."
+        explanation: "글짓기 대회에서 우승했다(won)는 소식을 듣고 매우 기뻐하는(delighted) 상황입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Delighted = 기쁜</b>. Light(빛)처럼 마음이 밝아지는 기분!"
     },
     {
         id: 2025230311,
@@ -664,7 +664,7 @@ const problemDB = [
         question: "11. 다음 대화가 이루어지는 장소로 가장 적절한 것은?",
         options: ["경찰서", "미용실", "소방서", "음식점"],
         answer: 3,
-        explanation: "Pizza(피자)와 Coke(콜라)를 주문하고 가격을 계산하는 상황입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Pizza, Coke, Order(주문)</b> ➡ <b>'음식점'</b>."
+        explanation: "피자(pizza)와 콜라(coke)를 주문하고 계산하는 상황이므로 음식점입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Pizza, Coke, Total(총액)</b> ➡ <b>'음식점'</b>."
     },
     {
         id: 2025230312,
@@ -676,7 +676,7 @@ const problemDB = [
         question: "12. 다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?",
         options: ["plant", "animal", "program", "visitor"],
         answer: 2,
-        explanation: "앞 문장에서 'this program'을 발표한다고 했고, 'It(그것)'이 9월에 열린다고 했으니 It은 'this program'을 가리킵니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>It</b>은 <b>바로 앞 문장의 핵심 단어(this program)</b>를 대신합니다."
+        explanation: "앞 문장에서 'this program'을 발표한다고 했고, 바로 뒤에 'It'이 9월에 열린다고 했으니, It은 프로그램을 가리킵니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>It</b>은 <b>바로 앞 문장의 핵심 단어(this program)</b>를 대신합니다."
     },
     {
         id: 2025230313,
@@ -688,7 +688,7 @@ const problemDB = [
         question: "13. 다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?",
         options: ["Where do you live", "When is your birthday", "Why did you buy it", "What do you think of it"],
         answer: 3,
-        explanation: "모자를 보여주며 의견을 묻는 상황입니다. B가 '아름답다(Beautiful)'고 대답했으므로 '어떻게 생각해?(What do you think of it?)'라고 물었을 것입니다.<br><br>🍯 <b>[회화 꿀팁]</b> 대답이 <b>'Beautiful(평가/의견)'</b>이면 질문은 <b>'What do you think?(어때?)'</b>입니다."
+        explanation: "모자를 샀다고 말한 뒤 B가 '아름답다'고 대답했으므로, 모자에 대한 의견을 묻는 질문이 들어가야 합니다.<br><br>🍯 <b>[회화 꿀팁]</b> 대답이 <b>'Beautiful(평가/의견)'</b>이면 질문은 <b>'What do you think?(어때?)'</b>입니다."
     },
     {
         id: 2025230314,
@@ -696,33 +696,35 @@ const problemDB = [
         round: "2",
         level: "고졸",
         subject: "영어",
-        passage: "I'm really looking forward <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span> going camping.<br>My mom used <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span> read books to me when I was little.",
-        question: "14. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?",
-        options: ["as", "to", "for", "like"],
-        answer: 1,
-        explanation: "Look forward to (~을 고대하다), Used to (~하곤 했다). 두 숙어 모두 'to'가 들어갑니다.<br><br>🍯 <b>[숙어 꿀팁]</b> <b>'~ 투(~to)'</b> 세트! <b>Look forward to</b>, <b>Used to</b>. 입에 붙여두세요!"
+        passage: "<b>A:</b> Where did you leave your umbrella?<br><b>B:</b> <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span>",
+        question: "14. 다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?",
+        options: ["I think I left it on the bus", "I can explain why he liked it", "I helped my friend make lunch", "I bought a new dress yesterday"],
+        answer: 0,
+        explanation: "우산을 어디에(Where) 두었냐고 물었으므로, 장소(on the bus)가 포함된 대답을 해야 합니다.<br><br>🍯 <b>[회화 꿀팁]</b> 질문이 <b>Where(어디)</b>면 대답엔 <b>장소(Bus)</b>가 나와야 합니다."
     },
     {
-        id: 202520315,
+        id: 2025230315,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "15. 다음 대화의 주제로 가장 적절한 것은?<br>A: Can you tell me how to make a comic book?",
+        passage: "<b>A:</b> Can you tell me how to make a comic book?<br><b>B:</b> First, you have to choose a topic, and then write a short story.<br><b>A:</b> I see. Do you draw the pictures afterwards?<br><b>B:</b> That's right.",
+        question: "15. 다음 대화의 주제로 가장 적절한 것은?",
         options: ["도서관 이용 규칙", "만화책을 만드는 방법", "좋아하는 영화 장르", "이야기를 경청하는 태도"],
         answer: 1,
-        explanation: "How to make(~만드는 법) a comic book(만화책). 그대로 해석하면 됩니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>How to(~하는 법)</b> 뒤에 나오는 단어만 알면 답입니다."
+        explanation: "첫 문장에서 'how to make a comic book(만화책 만드는 법)'을 묻고 있고, 그 과정을 설명하고 있습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>How to (~하는 법)</b> + <b>Make a comic book</b>. 그대로 해석하면 정답!"
     },
     {
-        id: 202520316,
+        id: 2025230316,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "16. 다음 글을 쓴 목적으로 가장 적절한 것은?<br>The school writing club... join us on Thursdays...",
+        passage: "The school writing club is holding a weekly workshop to help students improve their writing skills. Each week, we will meet to share ideas, give feedback, and practice together. If you are interested in becoming a more confident writer, join us on Thursdays in room 205.",
+        question: "16. 다음 글을 쓴 목적으로 가장 적절한 것은?",
         options: ["안부를 전하려고", "예약을 승인하려고", "참가자를 모집하려고", "행사 취소를 공지하려고"],
         answer: 2,
-        explanation: "Join us(우리와 함께하자)는 표현은 회원을 모집할 때 씁니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Join(가입/참여)</b>이라는 단어가 보이면 무조건 <b>'모집'</b>이나 <b>'초대'</b>입니다."
+        explanation: "글쓰기 클럽에서 워크숍을 여니 관심 있으면 참여하라(join us)고 권유하는 글입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Join us(함께하자/가입해라)</b>가 보이면 무조건 <b>'모집'</b>입니다."
     },
     {
         id: 202520317,
@@ -7547,6 +7549,7 @@ const problemDB = [
         explanation: "우리(조선) 물건을 쓰자는 운동입니다.<br><br>🍯 <b>[구호 꿀팁]</b> <b>'조선'</b> 사람은 <b>'조선'</b> 것!"
     }
 ];
+
 
 
 
