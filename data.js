@@ -2510,561 +2510,604 @@ const problemDB = [
     // [영어] 2025년 1회 (과목코드: 03)
     // ============================================================
     {
-        id: 202510301,
+        id: 2025130301,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "1. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것은?<br>Teaching Korean... was an interesting <u>experience</u> last winter.",
+        passage: "Teaching Korean to young kids was an interesting <u>experience</u> last winter.",
+        question: "1. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.",
         options: ["경험", "분업", "설명", "흥미"],
         answer: 0,
-        explanation: "Experience는 '경험'입니다. (흥미는 Interest)<br><br>🍯 <b>[단어 꿀팁]</b> 게임할 때 <b>EXP(경험치)</b> 얻죠? 그 EXP가 바로 <b>Experience</b>입니다!"
+        explanation: "문장에서 'experience'는 '경험'이라는 뜻으로 쓰였습니다.<br>해석: 작년 겨울 어린 아이들에게 한국어를 가르친 것은 흥미로운 <b>경험</b>이었다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>experience = 경험</b>. 게임에서 'EXP'가 경험치인 걸 떠올려보세요!"
     },
     {
-        id: 202510302,
+        id: 2025130302,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "2. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것은?<br>Students were encouraged to <u>take part in</u> the group activity.",
+        passage: "Students were encouraged to <u>take part in</u> the group activity.",
+        question: "2. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.",
         options: ["수리하다", "알아채다", "참여하다", "주문하다"],
         answer: 2,
-        explanation: "Take part in = Participate in = ~에 참여하다.<br><br>🍯 <b>[숙어 꿀팁]</b> <b>'파트(Part)를 맡다'</b> ➡ 그 일에 <b>'참여하다'</b>."
+        explanation: "'take part in'은 '~에 참여하다'라는 뜻의 숙어입니다. 동의어로는 'participate in'이 있습니다.<br>해석: 학생들은 그룹 활동에 <b>참여하</b>도록 장려되었다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>part(부분)</b>를 <b>take(가져간다)</b> = 내가 한 부분을 맡는다 = <b>참여하다</b>."
     },
     {
-        id: 202510303,
+        id: 2025130303,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "3. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것은?<br>She went swimming <u>despite</u> her fear of water.",
+        passage: "She went swimming <u>despite</u> her fear of water.",
+        question: "3. 다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.",
         options: ["제외하고", "왜냐하면", "불구하고", "예를 들면"],
         answer: 2,
-        explanation: "Despite는 '~에도 불구하고'라는 뜻의 전치사입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Despite = In spite of</b> = <b>불구하고</b>. (물을 무서워함에도 불구하고 수영했다)"
+        explanation: "'despite'는 '~에도 불구하고'라는 뜻의 전치사입니다.<br>해석: 그녀는 물에 대한 공포에도 <b>불구하고</b> 수영하러 갔다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>despite = 인스파이트오브(in spite of)</b> = <b>불구하고</b>. 반전이 있을 때 쓰는 단어입니다."
     },
     {
-        id: 202510304,
+        id: 2025130304,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "4. 다음 중 밑줄 친 두 단어의 의미 관계와 다른 것은?<br>The street was <u>dark</u> while the church was <u>bright</u>.",
-        options: ["thick - thin", "poor - rich", "correct - right", "weak - strong"],
-        answer: 2,
-        explanation: "Dark(어두운) ↔ Bright(밝은)는 반대말입니다. 3번 Correct(맞는) = Right(맞는)는 유의어(비슷한 말)입니다.<br><br>🍯 <b>[문제 꿀팁]</b> 보기 4개 중 <b>혼자 성격이 다른 녀석</b>(반대말들 사이에 낀 비슷한 말)을 찾으세요."
+        passage: "The street was <u>dark</u> while the church was <u>bright</u>.",
+        question: "4. 다음 중 밑줄 친 두 단어의 의미 관계와 다른 것은?",
+        options: ["thick - thin", "poor - rich", "weak - strong", "correct - right"],
+        answer: 3,
+        explanation: "제시된 문장의 'dark(어두운)'와 'bright(밝은)'는 **반의어(반대말)** 관계입니다.<br>① thick(두꺼운) - thin(얇은) : 반의어<br>② poor(가난한) - rich(부유한) : 반의어<br>③ weak(약한) - strong(강한) : 반의어<br>④ correct(옳은) - right(옳은) : **유의어(비슷한 말)**<br>따라서 관계가 다른 것은 4번입니다.<br><br>🍯 <b>[영어 꿀팁]</b> 단어의 뜻을 몰라도 <b>correct</b>와 <b>right</b>가 둘 다 '맞다'는 뜻인 건 알 수 있죠? 혼자만 <b>친구(유의어)</b>입니다."
     },
     {
-        id: 202510305,
+        id: 2025130305,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        image: "images/2025_1_Eng_05.png",
-        question: "5. 다음 축제 안내문에서 언급되지 않은 것은?<br><b>Strawberry Festival</b><br>Date: April 15th-16th<br>Location: The Spring Park<br>Activities: Picking, Eating contest...",
+        passage: "<b>Strawberry Festival</b><br><b>Date:</b> April 15th-16th<br><b>Location:</b> The Spring Park<br><b>Activities:</b> Picking, Eating contest, Jam making<br>Come and Enjoy!",
+        question: "5. 다음 축제 안내문에서 언급되지 않은 것은?",
         options: ["날짜", "장소", "주차료", "활동 내용"],
         answer: 2,
-        explanation: "Date(날짜), Location(장소), Activities(활동)는 있지만 Parking(주차) 정보는 없습니다.<br><br>🍯 <b>[독해 꿀팁]</b> 영어 단어랑 보기를 <b>일대일로 매칭</b>해보세요. 없는 게 정답!"
+        explanation: "안내문에 날짜(Date), 장소(Location), 활동 내용(Activities)은 언급되어 있지만, 주차료(Parking fee)에 대한 정보는 없습니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>영어 단어 찾기</b> 게임입니다. Date(날짜), Location(장소), Activities(활동)만 찾으면 남는 게 정답!"
     },
     {
-        id: 202510306,
+        id: 2025130306,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "6. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?<br>He goes for a (    ) every morning...<br>She wants to (    ) her own shop...",
-        options: ["run", "touch", "report", "increase"],
-        answer: 0,
-        explanation: "달리기를 하다(Run), 가게를 운영하다(Run).<br><br>🍯 <b>[단어 꿀팁]</b> <b>Run a shop = 가게를 운영하다</b>. 검정고시 필수 표현입니다."
-    },
-    {
-        id: 202510307,
-        year: "2025",
-        round: "1",
-        level: "고졸",
-        subject: "영어",
-        question: "7. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?<br>Please do not (    ) the paintings...<br>Let's keep in (    ) after we graduate...",
+        passage: "Please do not <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> the paintings on the wall.<br>Let's keep in <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> after we graduate from high school.",
+        question: "6. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.",
         options: ["run", "touch", "report", "increase"],
         answer: 1,
-        explanation: "만지지 마세요(Do not touch), 연락하고 지내자(Keep in touch).<br><br>🍯 <b>[숙어 꿀팁]</b> <b>Keep in touch</b> = <b>연락하다</b>. (터치하며 지내자)"
+        explanation: "첫 번째 문장: 그림을 만지지(touch) 마세요.<br>두 번째 문장: 연락하고(keep in touch) 지내자.<br>공통으로 들어갈 말은 'touch'입니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>'Keep in touch'</b>(연락하다)는 정말 자주 나오는 표현이니 꼭 외워두세요!"
     },
     {
-        id: 202510308,
+        id: 2025130307,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "8. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?<br>Mom asked me (    ) cleaned the house.<br>He is the man (    ) invented this machine.",
+        passage: "Mom asked me <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> cleaned the house.<br>He is the man <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> invented this machine.",
+        question: "7. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.",
         options: ["why", "who", "when", "where"],
         answer: 1,
-        explanation: "누가 청소했는지(Who), 기계를 발명한 사람(Man who). 사람을 가리킬 땐 Who를 씁니다.<br><br>🍯 <b>[문법 꿀팁]</b> <b>사람(Mom, Man)</b> 뒤에는 <b>Who(누구)</b>가 옵니다."
+        explanation: "첫 번째 문장: 누가(who) 청소했는지 물으셨다. (의문사)<br>두 번째 문장: 이 기계를 발명한 사람(who)이다. (관계대명사)<br>선행사가 'man(사람)'이므로 'who'가 적절합니다.<br><br>🍯 <b>[영어 꿀팁]</b> 빈칸 앞에 <b>'사람(man)'</b>이 보이면 <b>'who'</b>가 정답일 확률 99%!"
     },
     {
-        id: 202510309,
+        id: 2025130308,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "9. 다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?<br>B: You know, <u>\"Don't judge a book by its cover.\"</u>",
-        options: ["가는 말이 고와야 오는 말이 곱다.", "일찍 일어나는 새가 벌레를 잡는다.", "어려울 때 돕는 친구가 진정한 친구다.", "겉모습만으로 사람을 판단해서는 안 된다."],
-        answer: 3,
-        explanation: "책(Book)을 표지(Cover)만 보고 판단하지 마라. 즉, 겉모습만 보고 판단하지 말라는 뜻입니다.<br><br>🍯 <b>[속담 꿀팁]</b> <b>Book = 사람, Cover = 겉모습</b>. 표지만 보고 책 내용을 알 수 없죠?"
-    },
-    {
-        id: 202510310,
-        year: "2025",
-        round: "1",
-        level: "고졸",
-        subject: "영어",
-        question: "10. 다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?<br>A: You really missed a great game.<br>B: I wish I could have gone.",
-        options: ["아쉬움", "두려움", "황홀함", "창피함"],
-        answer: 0,
-        explanation: "경기를 놓쳐서(Missed), 갔으면 좋았을 텐데(Wish)라고 하니 아쉬운 것입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Wish(소망) + Missed(놓침)</b> ➡ <b>'아쉬움'</b>."
-    },
-    {
-        id: 202510311,
-        year: "2025",
-        round: "1",
-        level: "고졸",
-        subject: "영어",
-        question: "11. 다음 대화가 이루어지는 장소로 가장 적절한 것은?<br>A: Where can I find the science books?<br>B: ...You can take out seven books at a time.",
-        options: ["도서관", "정육점", "주차장", "철물점"],
-        answer: 0,
-        explanation: "Book(책), Borrow(빌리다)가 나오면 도서관입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Book</b> 나오면 <b>도서관(Library)</b> 아니면 서점(Bookstore)!"
-    },
-    {
-        id: 202510312,
-        year: "2025",
-        round: "1",
-        level: "고졸",
-        subject: "영어",
-        question: "12. 다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?<br>Yoga is one of them. <u>It</u> focuses on bringing harmony...",
-        options: ["exam", "yoga", "cooking", "marathon"],
-        answer: 1,
-        explanation: "It은 바로 앞 문장의 핵심어인 Yoga를 가리킵니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>It</b>은 <b>바로 앞 문장</b>에 있는 주인공입니다."
-    },
-    {
-        id: 202510313,
-        year: "2025",
-        round: "1",
-        level: "고졸",
-        subject: "영어",
-        question: "13. 다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?<br>A: Let's go see a movie.<br>B: Sure. (        )?<br>A: I don't care. Anything but horror movies.",
-        options: ["Will you do me a favor", "How tall is that building", "What kind of movie do you want to see", "Could you show me the way"],
-        answer: 2,
-        explanation: "영화 보러 가자고 했고, 공포 영화 빼고 다 좋다고 답했으니 '무슨 영화 볼래?'라고 물었겠죠?<br><br>🍯 <b>[회화 꿀팁]</b> 대답이 <b>'Horror movie'</b>니까 질문도 <b>'Movie'</b>가 들어간 걸 고르세요."
-    },
-    {
-        id: 202510314,
-        year: "2025",
-        round: "1",
-        level: "고졸",
-        subject: "영어",
-        question: "14. 다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?<br>Henry, I totally agree (    ) you.",
+        passage: "Finally, he came up <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> a great idea.<br>Henry, I totally agree <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> you.",
+        question: "8. 다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.",
         options: ["in", "to", "with", "from"],
         answer: 2,
-        explanation: "Agree with (~에게 동의하다).<br><br>🍯 <b>[숙어 꿀팁]</b> <b>Agree with 사람</b>. (너와 함께(with) 동의해)"
+        explanation: "첫 번째 문장: 'come up with' (~을 떠올리다)<br>두 번째 문장: 'agree with' (~에게 동의하다)<br>공통으로 들어갈 전치사는 'with'입니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>'동의해!'</b> 할 때 <b>'I agree with you'</b>라고 하죠? <b>with</b>가 정답입니다."
     },
     {
-        id: 202510315,
+        id: 2025130309,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "15. 다음 대화의 주제로 가장 적절한 것은?<br>A: ...dangers of strong sunlight?<br>B: ...sunburn... skin cancer.",
+        passage: "A: That man over there looks strange.<br>B: That's my neighbor David. He is one of the nicest people I know.<br>A: Really? I had no idea.<br>B: You know, \"<u>Don't judge a book by its cover.</u>\"",
+        question: "9. 다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?",
+        options: ["가는 말이 고와야 오는 말이 곱다.", "일찍 일어나는 새가 벌레를 잡는다.", "어려울 때 돕는 친구가 진정한 친구다.", "겉모습만으로 사람을 판단해서는 안 된다."],
+        answer: 3,
+        explanation: "'Don't judge a book by its cover'는 직역하면 '표지로 책을 판단하지 마라'는 뜻으로, 겉모습만 보고 사람이나 사물을 판단해서는 안 된다는 의미의 속담입니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>book(책)</b>, <b>cover(표지/겉)</b>만 알아도 풀 수 있습니다. 겉만 보고 판단하지 말라는 뜻!"
+    },
+    {
+        id: 2025130310,
+        year: "2025",
+        round: "1",
+        level: "고졸",
+        subject: "영어",
+        passage: "A: Why didn't you go to the game last night?<br>B: I had too much homework.<br>A: You really missed a great game.<br>B: <u>I wish I could have gone.</u>",
+        question: "10. 다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?",
+        options: ["아쉬움", "두려움", "황홀함", "창피함"],
+        answer: 0,
+        explanation: "B는 'I wish I could have gone(나도 갔으면 좋았을 텐데)'라고 말하며 숙제 때문에 경기를 보러 가지 못한 것에 대해 아쉬움을 표현하고 있습니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>'I wish'</b>가 나오면 90% 이상 <b>'아쉬움'</b>이나 <b>'소망'</b>을 나타냅니다. 못 해서 아쉬운 상황!"
+    },
+    {
+        id: 2025130311,
+        year: "2025",
+        round: "1",
+        level: "고졸",
+        subject: "영어",
+        passage: "A: Where can I find the science <u>books</u>?<br>B: Oh, they are on the 2nd floor.<br>A: Thanks. How many <u>books</u> can I <u>borrow</u>?<br>B: You can take out seven books at a time.",
+        question: "11. 다음 대화가 이루어지는 장소로 가장 적절한 것은?",
+        options: ["도서관", "정육점", "주차장", "철물점"],
+        answer: 0,
+        explanation: "책(books)을 찾고, 몇 권이나 빌릴 수 있는지(borrow) 묻는 대화이므로 장소는 도서관입니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>books(책)</b>, <b>borrow(빌리다)</b> ➡ <b>도서관(Library)</b>."
+    },
+    {
+        id: 2025130312,
+        year: "2025",
+        round: "1",
+        level: "고졸",
+        subject: "영어",
+        passage: "There are various ways people let go of their stress and maintain healthy lives. <u>Yoga</u> is one of them. <u>It</u> focuses on bringing harmony between mind and body. This leads to inner peace and can relieve your stress. Why don't you try this for your health?",
+        question: "12. 다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?",
+        options: ["exam", "yoga", "cooking", "marathon"],
+        answer: 1,
+        explanation: "앞 문장에서 'Yoga is one of them(요가는 그중 하나다)'이라고 언급한 뒤, 바로 뒤이어 'It focuses on...'이라며 요가의 특징을 설명하고 있으므로 It은 Yoga를 가리킵니다.<br><br>🍯 <b>[영어 꿀팁]</b> 대명사(It, They)는 <b>바로 앞 문장의 핵심 명사</b>를 대신합니다. 바로 앞에 <b>Yoga</b>가 있네요!"
+    },
+    {
+        id: 2025130313,
+        year: "2025",
+        round: "1",
+        level: "고졸",
+        subject: "영어",
+        passage: "A: Let's go see a movie.<br>B: Sure. <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>?<br>A: I don't care. Anything but horror movies.<br>B: What about a romantic comedy?<br>A: Sounds good.",
+        question: "13. 다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+        options: ["Will you do me a favor", "How tall is that building over there", "What kind of movie do you want to see", "Could you show me the way to the theater"],
+        answer: 2,
+        explanation: "B의 질문에 A가 'I don't care(상관없어). Anything but horror movies(공포 영화만 아니면 돼)'라고 대답했으므로, B는 어떤 종류의 영화를 보고 싶은지 물었을 것입니다.<br>③ What kind of movie do you want to see (어떤 종류의 영화를 보고 싶니?)<br><br>🍯 <b>[영어 꿀팁]</b> 대답이 <b>'공포 영화는 싫어'</b>니까 질문은 <b>'무슨 영화 볼래?'</b>여야 자연스럽습니다."
+    },
+    {
+        id: 2025130314,
+        year: "2025",
+        round: "1",
+        level: "고졸",
+        subject: "영어",
+        passage: "A: Have you ever been abroad?<br>B: <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>",
+        question: "14. 다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+        options: ["No, I like vegetables more", "Yes, I have been to Vietnam twice", "You should wear school uniforms at school", "It is important to fasten your seatbelt at all times"],
+        answer: 1,
+        explanation: "질문 'Have you ever been abroad?(해외에 가본 적 있니?)'에 대한 대답으로는 경험 유무를 말하는 것이 적절합니다.<br>② Yes, I have been to Vietnam twice (응, 베트남에 두 번 가봤어)가 가장 자연스럽습니다.<br><br>🍯 <b>[영어 꿀팁]</b> 질문에 <b>'Have you...?'</b>가 있으면 대답에도 <b>'have'</b>가 들어가는 경우가 많습니다. (짝꿍 맞추기!)"
+    },
+    {
+        id: 2025130315,
+        year: "2025",
+        round: "1",
+        level: "고졸",
+        subject: "영어",
+        passage: "A: Have you heard about the dangers of strong <u>sunlight</u>?<br>B: Yeah, people can experience severe <u>sunburn</u> when exposed to strong sunlight.<br>A: Exactly. It can also cause <u>skin cancer</u>.",
+        question: "15. 다음 대화의 주제로 가장 적절한 것은?",
         options: ["에너지를 절약하는 방법", "식중독 예방을 위한 수칙", "유연성을 강화하기 위한 운동법", "강한 햇빛이 피부에 미치는 악영향"],
         answer: 3,
-        explanation: "Sunlight(햇빛), Sunburn(화상), Skin cancer(피부암). 햇빛의 위험성입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Sun(해)</b> 단어가 계속 나오죠? 보기에서 <b>'햇빛'</b>을 찾으세요."
+        explanation: "대화에서 strong sunlight(강한 햇빛), sunburn(햇볕에 탐/화상), skin cancer(피부암) 등의 키워드가 반복적으로 언급되고 있습니다. 따라서 주제는 강한 햇빛이 피부에 미치는 악영향입니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>Sunlight(햇빛)</b>, <b>Sunburn(화상)</b>, <b>Skin(피부)</b>. 이 단어들이 가리키는 건 딱 하나, <b>4번</b>입니다."
     },
     {
-        id: 202510316,
+        id: 2025130316,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "16. 다음 글을 쓴 목적으로 가장 적절한 것은?<br>...you sent me the wrong size. Please let me know how to exchange these items.",
+        passage: "I ordered several large shirts from your website last weekend. Yesterday, I got the package and found out that you sent me the wrong size. Please let me know how to exchange these items. I will be waiting for your response. Thank you.",
+        question: "16. 다음 글을 쓴 목적으로 가장 적절한 것은?",
         options: ["교환 문의", "부탁 거절", "예약 확인", "참가 신청"],
         answer: 0,
-        explanation: "Wrong size(잘못된 사이즈), Exchange(교환). 교환해달라는 글입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Exchange = 교환</b>. (X자 모양으로 바꾸는 것!)"
+        explanation: "글쓴이는 주문한 사이즈와 다른 잘못된 사이즈(wrong size)를 받았다고 하며, 물건을 어떻게 교환(exchange)하는지 묻고 있습니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>wrong size(잘못된 사이즈)</b>, <b>exchange(교환)</b>. 쇼핑할 때 가장 많이 쓰는 단어들이죠? 정답은 <b>교환 문의</b>입니다."
     },
     {
-        id: 202510317,
+        id: 2025130317,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        image: "images/2025_1_Eng_17.png",
-        question: "17. 다음 안내문의 내용과 일치하지 않는 것은?<br><b>Author of the Month</b><br>* No food allowed",
+        passage: "<b>Author of the Month</b><br>Share your ideas with the author!<br><br><b>Date:</b> Friday at 6:00 p.m. in Vincent Hall<br><b>Activities:</b><br>- Take a picture with the author.<br>- Get the author's signature.<br><br>※ No food allowed<br>Send any questions to talkshow@bookstore.com.",
+        question: "17. 다음 안내문의 내용과 일치하지 않는 것은?",
         options: ["금요일 오후 6시에 시작한다.", "작가와 사진을 찍을 수 있다.", "작가의 서명을 받을 수 있다.", "행사 중 음식을 먹을 수 있다."],
         answer: 3,
-        explanation: "No food allowed = 음식 반입 금지. 먹을 수 있다는 4번은 틀렸습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>No food</b> ➡ <b>음식 X</b>. 부정어(No)를 잘 보세요."
+        explanation: "안내문에 'No food allowed(음식 반입 금지)'라고 명시되어 있습니다. 따라서 행사 중 음식을 먹을 수 있다는 내용은 일치하지 않습니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>No food allowed</b> = <b>음식 금지</b>. 'No'가 보이면 '할 수 없다'는 뜻입니다."
     },
     {
-        id: 202510318,
+        id: 2025130318,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "18. 다음 Isabella에 대한 설명과 일치하지 않는 것은?<br>Luckily, she could finally see lots of stars on the last night.",
-        options: ["호주로 휴가를 갔다.", "비가 많이 와서 이틀 동안 호텔에 있었다.", "지루한 텔레비전 쇼를 보았다.", "마지막 날 밤에 별들을 볼 수 없었다."],
+        passage: "Isabella went to Australia on vacation. She expected to see the stars every night. However, she remained in her hotel for two days because it rained heavily. She just watched boring television shows. Luckily, she could finally see lots of stars on the last night. It was like a dream come true.",
+        question: "18. 다음 Isabella에 대한 설명과 일치하지 않는 것은?",
+        options: ["호주로 휴가를 갔다.", "비가 많이 와서 이틀 동안 호텔에 남아 있었다.", "지루한 텔레비전 쇼를 보았다.", "마지막 날 밤에 별들을 볼 수 없었다."],
         answer: 3,
-        explanation: "See lots of stars(별을 많이 봤다)고 했습니다. 없었다는 4번이 틀렸습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>See stars(별 보다)</b> ↔ <b>볼 수 없었다</b>. 반대 내용 찾기!"
+        explanation: "마지막 문장 'Luckily, she could finally see lots of stars on the last night(운 좋게도, 그녀는 마지막 날 밤에 마침내 많은 별을 볼 수 있었다)'에 따르면, 별을 볼 수 없었다는 4번은 일치하지 않습니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>could see(볼 수 있었다)</b> vs <b>볼 수 없었다</b>. 긍정과 부정을 구별하는 문제입니다."
     },
     {
-        id: 202510319,
+        id: 2025130319,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "19. 다음 글의 주제로 가장 적절한 것은?<br>Attention all passengers. The train to Busan has been canceled, and we are giving full refunds.",
+        passage: "Attention all passengers. The train to Busan has been canceled, and we are giving full refunds. Please bring your tickets to the information desk, or visit our website and submit the application form. We apologize for the inconvenience.",
+        question: "19. 다음 글의 주제로 가장 적절한 것은?",
         options: ["열차 취소로 인한 환불 안내", "좋은 냉장고를 선택하는 기준", "건물의 문고리를 안전하게 설계하는 방법", "에스컬레이터에서 피해야 할 위험한 장난"],
         answer: 0,
-        explanation: "Canceled(취소됨), Refunds(환불). 열차 취소와 환불 안내입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Refund = 환불</b>. (Fund=돈, Re=다시. 돈 돌려받기)"
+        explanation: "부산행 열차가 취소(canceled)되었으며 전액 환불(full refunds)을 해준다는 안내 방송입니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>Canceled(취소)</b>, <b>Refunds(환불)</b>. 여행 갈 때 가장 듣기 싫은 단어들이지만, 주제 찾기에는 확실한 단서입니다!"
     },
     {
-        id: 202510320,
+        id: 2025130320,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "20. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?<br>Who are (    )? They are explorers who are chosen to travel into outer space.",
+        passage: "Who are <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>? They are explorers who are chosen to travel into outer space. They are trained under harsh conditions to endure the severe environment of space. Staying calm in unexpected situations is also another important part of their training.",
+        question: "20. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
         options: ["dancers", "communicators", "astronauts", "psychologists"],
         answer: 2,
-        explanation: "Outer space(우주)를 여행하는 사람은 Astronauts(우주비행사)입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Astro(별/우주)</b> + <b>naut(선원)</b> = <b>우주비행사</b>."
+        explanation: "'outer space(우주)'로 여행하도록 선택된 탐험가라는 설명에서 'astronauts(우주비행사)'가 정답임을 알 수 있습니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>Space(우주)</b> 가는 사람은? <b>Astronaut(우주비행사)</b>. 참고로 'Star'와 관련된 단어 앞에는 'Astro'가 붙습니다."
     },
     {
-        id: 202510321,
+        id: 2025130321,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "21. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?<br>AI... helpful. There are two (    ) when using AI. First... get answers right away.",
+        passage: "Artificial Intelligence (AI) is a technology that can be very helpful. There are two <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> when using AI. First, you can get answers to your questions right away. Also, AI can create summaries of huge amounts of information rapidly. This helps users understand the main points more easily.",
+        question: "21. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
         options: ["damages", "mistakes", "struggles", "advantages"],
         answer: 3,
-        explanation: "AI가 도움이 된다(Helpful)고 했고, 빠르게 답을 얻는 등 좋은 점을 말하고 있으니 '장점(Advantages)'입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Helpful(도움됨)</b> ➡ 좋은 거 ➡ <b>Advantage(이점/장점)</b>."
+        explanation: "AI가 도움이 되고(helpful), 즉시 답변을 얻을 수 있으며, 정보를 빠르게 요약해 준다는 내용은 AI의 '장점'들입니다. 따라서 'advantages(장점)'가 적절합니다.<br><br>🍯 <b>[영어 꿀팁]</b> <b>Helpful(도움이 되는)</b>, <b>Right away(즉시)</b>, <b>Easily(쉽게)</b>. 다 좋은 말들이죠? 좋은 점은 영어로 <b>Advantage</b>입니다."
     },
     {
-        id: 202510322,
+        id: 2025130322,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "22. 글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?<br><b>[Secondly, managing your time effectively is important...]</b><br>There are two things... (1) First of all... (2)... (3)... (4)",
-        options: ["(1)", "(2)", "(3)", "(4)"],
+        passage: "It is because you will be considered unprepared and unorganized if you spend too much time.<br><br>There are two things you need to remember to give better speeches. ( ① ) First of all, you should know what you intend to say. ( ② ) Understanding the message of the speech you are giving is more important than simply memorizing its script. ( ③ ) Secondly, managing your time effectively is important for the success of your speech. ( ④ )",
+        question: "22. 글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?",
+        options: ["①", "②", "③", "④"],
         answer: 3,
-        explanation: "Secondly(두 번째로)는 First(첫 번째로) 내용이 다 끝난 뒤에 나와야 합니다.<br><br>🍯 <b>[순서 꿀팁]</b> <b>First(첫째)</b> 다음에는 무조건 <b>Second(둘째)</b>가 옵니다. First 단락이 끝나는 곳을 찾으세요."
+        explanation: "주어진 문장은 '시간을 너무 많이 쓰면 준비되지 않은 것으로 간주되기 때문이다'라는 내용으로, 시간 관리의 중요성을 언급한 뒤 그에 대한 이유(It is because...)로 이어지는 것이 자연스럽습니다. 따라서 시간 관리(managing your time)를 언급한 문장 뒤인 ④번이 적절합니다.<br><br>🍯 <b>[영어 꿀팁]</b> 주어진 문장의 <b>'spend too much time'</b>(시간을 너무 많이 쓰다)과 본문의 <b>'managing your time'</b>(시간 관리)을 연결하면 답이 보입니다."
     },
     {
-        id: 202510323,
+        id: 2025130323,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "23. 다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?<br>However, eating late at night is not good for your body. There are three main reasons why this is so.",
+        passage: "These days, many restaurants deliver food. Some are open even after midnight. For this reason, you might easily order food at night when you feel hungry. However, eating late at night is not good for your body. There are three main reasons why this is so.",
+        question: "23. 다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?",
         options: ["야식이 건강에 해로운 이유", "제일 인기 있는 야식의 종류", "지역별 음식 문화의 발전 과정", "식당이 늦게까지 영업하는 이유"],
         answer: 0,
-        explanation: "마지막에 '세 가지 이유(Three main reasons)'가 있다고 했으니, 그 이유들이 나와야 합니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Not good(안 좋다)</b> + <b>Reasons(이유)</b> ➡ <b>'해로운 이유'</b>."
+        explanation: "글의 마지막 문장에서 '왜 그런지(몸에 좋지 않은지)에 대한 세 가지 주된 이유가 있다'라고 마무리하고 있으므로, 글 뒤에는 야식이 몸에 좋지 않은 구체적인 이유들이 이어져야 합니다.<br><br>🍯 <b>[영어 꿀팁]</b> 마지막 문장이 <b>'reasons'(이유)</b>로 끝났습니다. 무엇에 대한 이유일까요? 바로 앞 문장 <b>'not good for your body'</b>(몸에 안 좋다)에 대한 이유입니다."
     },
-    {
-        id: 202510324,
+   {
+        id: 2025130324,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "24. 윗글의 빈칸에 들어갈 말로 가장 적절한 것은?<br>...learn self-control by (    ) it on a regular basis.",
+        passage: "Taekwondo is popular throughout the world. What makes people so attracted to it? People improve their physical abilities, such as increased flexibility. In addition, they can learn self-control by <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> it on a regular basis. For these reasons, it is now enjoyed internationally.",
+        question: "24. 윗글의 빈칸에 들어갈 말로 가장 적절한 것은?",
         options: ["cleaning", "removing", "arresting", "practicing"],
         answer: 3,
-        explanation: "태권도를 규칙적으로 '연습(Practicing)'함으로써 자제력을 배웁니다.<br><br>🍯 <b>[단어 꿀팁]</b> 운동/기술은 <b>Practice(연습)</b>하는 것입니다."
+        explanation: "태권도를 '연습(practicing)'함으로써 자기 절제(self-control)를 배울 수 있다는 내용이 자연스럽습니다. 태권도를 청소(cleaning)하거나 체포(arresting)한다는 것은 어색합니다.<br><br>🍯 <b>[영어 꿀팁]</b> 운동은 <b>Practice(연습)</b>하는 것입니다. <b>Taekwondo(태권도)</b> = <b>Practice</b>."
     },
     {
-        id: 202510325,
+        id: 2025130325,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "영어",
-        question: "25. 윗글의 주제로 가장 적절한 것은?<br>Taekwondo is popular... What makes people so attracted to it?",
+        passage: "Taekwondo is popular throughout the world. What makes people so attracted to it? People improve their physical abilities, such as increased flexibility. In addition, they can learn self-control by practicing it on a regular basis. For these reasons, it is now enjoyed internationally.",
+        question: "25. 윗글의 주제로 가장 적절한 것은?",
         options: ["태권도의 변천 과정", "세계 전통 의복의 특징", "태권도가 인기 있는 이유", "안전하게 운동하는 방법"],
         answer: 2,
-        explanation: "태권도가 인기 있다(Popular), 왜 매력을 느끼나(Attracted). 인기 비결에 대한 글입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Popular(인기 있는)</b> ➡ <b>'인기 있는 이유'</b>."
+        explanation: "글의 초반에 'What makes people so attracted to it?(무엇이 사람들을 끌어들이는가?)'라고 묻고, 신체 능력 향상, 유연성, 자기 절제 등의 장점들을 나열하며 태권도가 인기 있는 이유를 설명하고 있습니다.<br><br>🍯 <b>[영어 꿀팁]</b> 첫 문장의 <b>'Popular'(인기 있는)</b>와 <b>'Attracted'(매료된)</b>를 보면 주제가 <b>'인기 이유'</b>라는 것을 바로 알 수 있습니다."
     },
 
     // ============================================================
     // [사회] 2025년 1회 (과목코드: 04)
     // ============================================================
-    {
-        id: 202510401,
+   {
+        id: 2025130401,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "1. 다음에서 설명하는 관점은?<br>○ 시대적 배경과 맥락...<br>○ 과거, 현재, 미래의 상호 연관성...",
+        passage: "○ 시대적 배경과 맥락을 토대로 살펴보는 것<br>○ 과거, 현재, 미래의 상호 연관성을 바탕으로 살펴보는 것",
+        question: "1. 다음에서 설명하는 인간, 사회, 환경을 바라보는 관점으로 가장 적절한 것은?",
         options: ["공간적 관점", "생태적 관점", "시간적 관점", "윤리적 관점"],
         answer: 2,
-        explanation: "과거, 현재, 미래는 '시간'의 흐름입니다. 시간적 관점입니다.<br><br>🍯 <b>[개념 꿀팁]</b> <b>'과거-현재-미래'</b>, <b>'시대'</b> 나오면 무조건 <b>'시간적 관점'</b>!"
+        explanation: "시대적 배경, 과거, 현재, 미래와 같은 키워드는 시간의 흐름을 나타냅니다. 따라서 '시간적 관점'입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>'시대', '과거/현재/미래'</b> ➡ <b>'시간'</b>. 고민할 필요 없이 연결하세요!"
     },
     {
-        id: 202510402,
+        id: 2025130402,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "2. 다음과 같은 지역의 기후로 가장 적절한 것은?<br>○ 기온의 일교차가 큼, 강수량 매우 적음<br>○ 흙벽돌집, 온몸을 감싼 옷, 초원과 사막",
+        passage: "<b>[특징]</b><br>○ 기온의 일교차가 큼.<br>○ 강수량이 매우 적음.<br>○ 햇볕과 모래바람이 강함.<br>○ 주로 초원과 사막이 분포함.<br><br><b>[생활 양식]</b><br>평평한 지붕, 작은 창문, 두꺼운 흙벽돌집, 좁은 골목, 온몸을 감싼 옷",
+        question: "2. 다음과 같은 지역의 기후로 가장 적절한 것은?",
         options: ["열대 기후", "건조 기후", "온대 기후", "냉대 기후"],
         answer: 1,
-        explanation: "비가 안 오고(강수량 적음) 사막이 있는 곳은 건조 기후입니다.<br><br>🍯 <b>[지리 꿀팁]</b> <b>'사막', '비가 적음'</b> ➡ <b>'건조'</b>하다!"
+        explanation: "강수량이 적고 사막이 분포하며, 흙벽돌집을 짓고 사는 생활 양식은 건조 기후 지역의 특징입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>사막, 모래바람, 흙벽돌집</b> ➡ 비가 안 오는 <b>'건조 기후'</b>입니다."
     },
     {
-        id: 202510403,
+        id: 2025130403,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "3. 다음 사례에 나타난 자연관으로 옳은 것은?<br>○ 숲 복원, 국립 공원, 태양열 주택 (자연과 어울림)",
+        passage: "○ 황폐화된 숲을 복원하려는 사업<br>○ 자연을 있는 그대로 보전하려는 국립 공원 정책<br>○ 태양열 주택을 만들어 자연과 어울리는 주거 환경 조성",
+        question: "3. 다음 사례에 나타난 자연관으로 옳은 것은?",
         options: ["개인주의", "생태 중심주의", "인간 중심주의", "자원 민족주의"],
         answer: 1,
-        explanation: "자연을 보호하고 어울리려는 태도는 생태 중심주의입니다.<br><br>🍯 <b>[윤리 꿀팁]</b> <b>자연 보호, 공존</b> ➡ <b>'생태 중심주의'</b>. (반대: 개발, 파괴 ➡ 인간 중심주의)"
+        explanation: "자연을 보호하고 복원하며, 인간과 자연의 조화를 추구하는 태도는 '생태 중심주의'입니다. (인간 중심주의는 자연을 도구로 봅니다.)<br><br>🍯 <b>[사회 꿀팁]</b> <b>자연 보호, 조화, 복원</b> ➡ 착한 마음 ➡ <b>'생태 중심주의'</b>."
     },
     {
-        id: 202510404,
+        id: 2025130404,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "4. 환경 문제 해결을 위한 기업의 노력으로 적절하지 않은 것은?",
+        passage: "<b>[환경 문제 해결을 위한 노력]</b><br>○ 정부: 다양한 환경 정책 수립<br>○ 기업: <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span><br>○ 시민 사회: 정부와 기업 활동에 대한 감시",
+        question: "4. 다음에 들어갈 내용으로 적절하지 않은 것은?",
         options: ["친환경 기술 개발", "오염 정화 시설 운영", "환경 관련 법률 준수", "화석에너지 사용 확대"],
         answer: 3,
-        explanation: "화석에너지(석유, 석탄) 사용을 늘리면 환경 오염이 심해집니다. 줄여야겠죠?<br><br>🍯 <b>[상식 꿀팁]</b> 환경 문제에서 <b>'화석 연료/에너지 확대'</b>는 무조건 <b>오답(나쁜 짓)</b>입니다."
+        explanation: "기업이 환경 문제 해결을 위해 노력한다면 화석에너지 사용을 줄여야 합니다. '확대'하는 것은 환경 오염을 심화시키는 행위입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>환경을 위한 노력</b>인데 <b>'오염시키는(화석에너지)'</b> 행동을 하면 안 되겠죠?"
     },
     {
-        id: 202510405,
+        id: 2025130405,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "5. 산업화·도시화에 따른 변화로 옳은 것을 <보기>에서 고른 것은?<br><보기><br>ㄱ. 녹지 면적 감소<br>ㄷ. 직업 다양화 및 전문화",
+        passage: "<b><보기></b><br>ㄱ. 녹지 면적이 감소하였다.<br>ㄴ. 공동체적 가치관이 확산되었다.<br>ㄷ. 직업이 다양해지고 전문화되었다.<br>ㄹ. 거주 공간이 촌락 중심으로 바뀌었다.",
+        question: "5. 산업화·도시화에 따른 변화로 옳은 것을 <보기>에서 고른 것은?",
         options: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄹ", "ㄷ, ㄹ"],
         answer: 1,
-        explanation: "도시가 개발되면서 숲(녹지)은 줄어들고, 직업은 다양해졌습니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>도시화 = 복잡함, 아파트, 직업 많음, 자연 감소</b>."
+        explanation: "산업화와 도시화로 인해 개발이 진행되면서 녹지가 감소하고(ㄱ), 직업이 세분화되었습니다(ㄷ). 반면 공동체 의식은 약화되고 개인주의가 확산되었으며(ㄴ 틀림), 거주 공간은 도시 중심으로 바뀌었습니다(ㄹ 틀림).<br><br>🍯 <b>[사회 꿀팁]</b> <b>도시 = 복잡함(직업 다양), 삭막함(녹지 감소, 개인주의)</b>."
     },
     {
-        id: 202510406,
+        id: 2025130406,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "6. 다음에서 설명하는 경제 주체는?<br>○ 이윤 극대화 목적<br>○ 재화와 서비스의 공급자",
+        passage: "○ 이윤 극대화를 목적으로 한다.<br>○ 재화와 서비스의 공급자이자, 생산 요소의 수요자이다.",
+        question: "6. 다음에서 설명하는 경제 주체는?",
         options: ["기업", "정부", "소비자", "국제기구"],
         answer: 0,
-        explanation: "돈(이윤)을 벌기 위해 물건을 만들어 파는 곳은 기업입니다.<br><br>🍯 <b>[경제 꿀팁]</b> <b>'이윤 추구', '생산'</b> ➡ <b>'기업'</b>. (소비자는 '효용 추구')"
+        explanation: "이윤을 추구하고 물건(재화)을 만들어 파는(공급) 경제 주체는 '기업'입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>이윤(돈)</b> 벌려고 물건 파는 곳은? <b>'기업(회사)'</b>입니다."
     },
     {
-        id: 202510407,
+        id: 2025130407,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "7. 다음 야외조사 단계에 해당하는 활동으로 가장 적절한 것은?<br>계획 수립 ➡ 실내 조사 ➡ <b>( 야외 조사 )</b> ➡ 분석",
-        options: ["주제 선정", "주민 면담 및 설문", "그래프 작성", "보고서 작성"],
+        passage: "<b>[지역의 공간 변화를 살펴보기 위한 지역 조사 단계]</b><br>조사 계획 수립 ➡ 실내 조사 ➡ 야외 조사 ➡ 지역 정보 분석하기 ➡ 보고서 작성",
+        question: "7. 다음 야외 조사 단계에 해당하는 활동으로 가장 적절한 것은?",
+        options: ["조사 주제와 지역을 선정한다.", "지역 주민을 직접 만나 설문 조사 및 면담을 실시한다.", "지리 정보를 목적에 따라 그래프와 통계표로 표현한다.", "수집한 자료를 종합하여 지역의 발전 방안을 제시한다."],
         answer: 1,
-        explanation: "야외 조사는 현장에 직접 나가는 것입니다. 주민을 만나고 설문하는 것이 해당됩니다.<br><br>🍯 <b>[지리 꿀팁]</b> <b>야외 = 현장</b>. 책상에서 못 하는 것(면담, 답사)을 고르세요."
+        explanation: "야외 조사는 현장에 직접 나가서 하는 활동입니다. 주민 면담, 설문 조사, 현장 답사 등이 이에 해당합니다. (1번은 계획 수립, 3번은 정보 분석, 4번은 보고서 작성 단계입니다.)<br><br>🍯 <b>[사회 꿀팁]</b> <b>야외 = 밖</b>. 밖에서 사람 만나고 사진 찍는 게 야외 조사입니다."
     },
     {
-        id: 202510408,
+        id: 2025130408,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
         question: "8. 헌법이 보장하는 기본권 중 자유권에 대한 설명으로 옳은 것은?",
-        options: ["국가 권력으로부터 간섭받지 않을 권리이다.", "국가의 의사 결정 과정에 참여할 권리이다.", "침해당한 기본권의 구제를 청구할 권리이다.", "인간다운 생활의 보장을 요구할 권리이다."],
+        options: ["국가 권력으로부터 간섭받지 않을 권리이다.", "국가의 의사 결정 과정에 참여할 수 있는 권리이다.", "침해당한 기본권의 구제를 청구할 수 있는 권리이다.", "국가에 인간다운 생활의 보장을 요구할 수 있는 권리이다."],
         answer: 0,
-        explanation: "자유권은 '국가야, 나 건드리지 마!'라고 할 수 있는 소극적 권리입니다.<br><br>🍯 <b>[법 꿀팁]</b> <b>자유권 = 간섭 X</b>. (참정권=참여, 청구권=구제, 사회권=인간다운 생활)"
+        explanation: "자유권은 국가의 간섭 없이 자유롭게 생활할 수 있는 소극적·방어적 권리입니다. (2번은 참정권, 3번은 청구권, 4번은 사회권)<br><br>🍯 <b>[사회 꿀팁]</b> <b>자유권 = '건드리지 마!'</b> (간섭 배제). 가장 오래된 권리입니다."
     },
     {
-        id: 202510409,
+        id: 2025130409,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "9. 청소년의 노동권에 대한 설명으로 옳은 것은?<br>ㄱ. 근로 계약서 작성<br>ㄷ. 위험한 일 금지",
+        passage: "<b><보기></b><br>ㄱ. 근로 계약서를 작성해야 한다.<br>ㄴ. 최저 임금의 적용을 받을 수 없다.<br>ㄷ. 위험한 일이나 유해 업종의 일을 할 수 없다.<br>ㄹ. 임금은 부모 또는 법정 대리인에게 지급해야만 한다.",
+        question: "9. 청소년의 노동권에 대한 설명으로 옳은 것을 <보기>에서 고른 것은?",
         options: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄹ", "ㄷ, ㄹ"],
         answer: 1,
-        explanation: "청소년도 근로계약서 써야 하고, 위험한 일은 못 합니다. 최저임금은 성인과 똑같이 받습니다.<br><br>🍯 <b>[법 꿀팁]</b> 청소년 알바도 <b>성인이랑 똑같이 보호</b>받습니다. (최저임금 O, 계약서 O)"
+        explanation: "청소년도 근로계약서를 작성해야 하며(ㄱ), 위험한 일은 할 수 없습니다(ㄷ). 또한 성인과 동일하게 최저임금을 적용받으며(ㄴ 틀림), 임금은 원칙적으로 본인에게 직접 지급해야 합니다(ㄹ 틀림).<br><br>🍯 <b>[사회 꿀팁]</b> <b>청소년 알바</b>도 <b>성인과 똑같은 권리(최저임금, 직접 수령)</b>를 가집니다. 단, <b>위험한 일은 안 돼요!</b>"
     },
     {
-        id: 202510410,
+        id: 2025130410,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "10. 인간의 무한한 욕구에 비해 자원이 상대적으로 부족한 상태를 자원의 (    )이라고 한다.",
+        passage: "인간의 무한한 욕구에 비해 자원이 상대적으로 부족한 상태를 자원의 <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>(이)라고 한다.",
+        question: "10. 다음에 들어갈 용어는?",
         options: ["다양성", "효율성", "획일성", "희소성"],
         answer: 3,
-        explanation: "원하는 건 많은데 가진 게 적은 상태, '희소성'입니다.<br><br>🍯 <b>[경제 꿀팁]</b> <b>부족하다, 귀하다</b> ➡ <b>'희소성'</b>."
+        explanation: "인간의 욕구는 끝이 없는데 자원은 한정되어 있는 상태를 자원의 '희소성'이라고 합니다. 이것이 경제 문제가 발생하는 근본적인 원인입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>'부족하다', '귀하다'</b> ➡ <b>'희소성'</b>. 희귀템을 생각하세요!"
     },
     {
-        id: 202510411,
+        id: 2025130411,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "11. 정보화로 인한 생활의 변화로 옳은 것은?<br>ㄴ. 온라인 구매 증가<br>ㄹ. 재택근무 활성화",
+        passage: "<b><보기></b><br>ㄱ. 가상 공간을 통한 정보 교류의 감소<br>ㄴ. 온라인 상점을 통한 물건 구매 증가<br>ㄷ. 원격 교육과 전자 행정 서비스의 축소<br>ㄹ. 재택근무와 화상 회의를 통한 업무 활성화",
+        question: "11. 정보화로 인한 생활의 변화로 옳은 것을 <보기>에서 고른 것은?",
         options: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄹ", "ㄷ, ㄹ"],
         answer: 2,
-        explanation: "정보화 사회에서는 인터넷 쇼핑과 재택근무가 늘어납니다.<br><br>🍯 <b>[상식 꿀팁]</b> <b>정보화 = 인터넷 세상</b>. 인터넷으로 할 수 있는 것들이 늘어납니다."
+        explanation: "정보화 사회에서는 온라인 쇼핑이 증가하고(ㄴ), 재택근무와 화상 회의 등 비대면 업무가 활성화됩니다(ㄹ). 반면 정보 교류는 폭발적으로 증가하며(ㄱ 틀림), 원격 교육과 전자 행정 서비스는 확대됩니다(ㄷ 틀림).<br><br>🍯 <b>[사회 꿀팁]</b> <b>정보화 = 인터넷 세상</b>. <b>'온라인', '원격', '재택'</b>은 무조건 <b>증가/활성화</b>입니다."
     },
     {
-        id: 202510412,
+        id: 2025130412,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "12. 다음 상황을 배경으로 하여 등장한 경제 체제는?<br>○ 석유 파동, 정부 실패 ➡ 작은 정부 지향",
+        passage: "○ 1970년대 석유 파동으로 인한 스태그플레이션 발생<br>○ 20세기 후반 정부의 과도한 시장 개입으로 정부 실패 및 재정 악화 발생",
+        question: "12. 다음 상황을 배경으로 하여 등장한 경제 체제는?",
         options: ["중상주의", "자유방임주의", "수정 자본주의", "신자유주의"],
         answer: 3,
-        explanation: "정부가 너무 간섭해서 망했다(정부 실패)며 다시 자유를 외친 것이 '신자유주의'입니다.<br><br>🍯 <b>[경제 꿀팁]</b> <b>'정부 실패', '작은 정부'</b> ➡ <b>'신자유주의'</b>."
+        explanation: "정부의 지나친 개입(정부 실패)을 비판하며, 다시 시장의 자유를 강조하고 규제 완화, 공기업 민영화 등을 주장한 사상은 '신자유주의'입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>정부 실패 ➡ 다시 시장으로!</b> ➡ <b>'신(New)자유주의'</b>."
     },
     {
-        id: 202510413,
+        id: 2025130413,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "13. (    )은/는 한 나라가 다른 나라보다 더 적은 기회비용으로 상품을 생산할 수 있는 능력이다.",
+        passage: "<span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>은/는 한 나라가 다른 나라보다 더 적은 기회 비용으로 상품을 생산할 수 있는 능력이다.",
+        question: "13. 다음에 들어갈 용어는?",
         options: ["담합", "비교 우위", "외부 효과", "인플레이션"],
         answer: 1,
-        explanation: "남보다 더 싸게(기회비용 적게) 잘 만드는 것을 비교 우위라고 합니다.<br><br>🍯 <b>[경제 꿀팁]</b> <b>'기회비용이 적다'</b> = <b>'비교 우위'</b>가 있다."
+        explanation: "다른 나라보다 더 적은 기회비용으로 생산할 수 있는 능력을 '비교 우위'라고 합니다. 각국은 비교 우위에 있는 상품을 특화하여 교역함으로써 이익을 얻습니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>'기회비용이 적다'</b> = <b>'상대적으로(비교해서) 잘한다'</b> = <b>'비교 우위'</b>."
     },
     {
-        id: 202510414,
+        id: 2025130414,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
         question: "14. 다음 중 금융 자산의 일반적인 특징으로 가장 적절한 것은?",
-        options: ["채권은 정부가 발행 불가하다.", "예금은 위험성이 가장 높다.", "적금은 회사가 발행하는 증권이다.", "주식은 배당 수익, 시세 차익을 얻을 수 있다."],
+        options: ["채권은 정부나 공공 기관에서는 발행할 수 없다.", "예금은 원금 손실의 위험성이 가장 높은 상품이다.", "적금은 자금 조달을 목적으로 회사가 발행하는 증권이다.", "주식은 투자자가 배당 수익, 시세 차익을 얻을 수 있는 자산이다."],
         answer: 3,
-        explanation: "주식은 회사의 주인이 되는 것이라 회사가 돈을 벌면 배당금을 받고, 주가가 오르면 차익을 얻습니다.<br><br>🍯 <b>[경제 꿀팁]</b> <b>주식 = 배당금 + 대박(시세차익)</b>. (예금은 안전, 채권은 이자)"
+        explanation: "주식은 회사가 자금을 조달하기 위해 발행하며, 투자자는 배당금과 시세 차익을 기대할 수 있습니다. (1번: 채권은 정부/공공기관 발행 가능, 2번: 예금은 안전함, 3번: 주식에 대한 설명)<br><br>🍯 <b>[사회 꿀팁]</b> <b>주식 = 대박(시세 차익) or 쪽박(손실)</b>. <b>예/적금 = 안전빵</b>. <b>채권 = 빌려준 돈</b>."
     },
     {
-        id: 202510415,
+        id: 2025130415,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "15. 생활 유지 능력이 없는 국민의 최저 생활을 보장하는 공공부조의 종류에는 (    )이/가 있다.",
+        passage: "국가가 생활 유지 능력이 없거나 생활이 어려운 국민의 최저 생활을 보장하고 자립을 지원하는 제도인 공공부조의 종류에는 <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>이/가 있다.",
+        question: "15. 다음에 들어갈 내용으로 옳은 것은?",
         options: ["국민연금", "고용 보험", "국민 건강 보험", "국민 기초 생활 보장 제도"],
         answer: 3,
-        explanation: "돈이 없는 분들을 나라에서 도와주는 제도는 '기초 생활 보장'입니다. 나머지는 보험입니다.<br><br>🍯 <b>[복지 꿀팁]</b> <b>가난한 사람 도와줌</b> = <b>공공부조</b> = <b>'기초 생활'</b>."
+        explanation: "공공부조는 생활이 어려운 저소득층을 대상으로 국가가 전액 지원하는 제도로, 대표적인 예로 '국민 기초 생활 보장 제도'가 있습니다. (나머지는 사회 보험입니다.)<br><br>🍯 <b>[사회 꿀팁]</b> <b>'가난한 사람 도와준다'</b> ➡ <b>공공부조</b> ➡ <b>'기초 생활 보장'</b>. (보험료 안 냄)"
     },
     {
-        id: 202510416,
+        id: 2025130416,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "16. 다음에서 설명하는 문화권으로 옳은 것은?<br>○ 오스트레일리아, 뉴질랜드<br>○ 영어 사용, 남반구",
+        passage: "○ 오스트레일리아, 뉴질랜드, 태평양의 여러 섬을 포함한 지역임.<br>○ 영국 중심의 유럽 문화가 전파된 곳으로 주로 영어를 사용함.<br>○ 지리적으로 다른 대륙들과 떨어져 있으며 인구가 적은 편임.",
+        question: "16. 다음에서 설명하는 문화권으로 옳은 것은?",
         options: ["북극 문화권", "아메리카 문화권", "아프리카 문화권", "오세아니아 문화권"],
         answer: 3,
-        explanation: "호주(오스트레일리아)와 뉴질랜드가 있는 곳은 오세아니아입니다.<br><br>🍯 <b>[지리 꿀팁]</b> <b>호주(캥거루)</b> = <b>오세아니아</b>."
+        explanation: "오스트레일리아(호주)와 뉴질랜드가 속한 지역은 오세아니아 문화권입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>호주(오스트레일리아) + 섬나라들</b> ➡ <b>'오세아니아'</b>."
     },
     {
-        id: 202510417,
+        id: 2025130417,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
         question: "17. 다음 중 힌두교의 일반적인 특징으로 옳은 것은?",
-        options: ["유일신을 믿는다.", "메카를 성지로 한다.", "소를 신성시하여 소고기를 먹지 않는다.", "십자가를 세운 예배당이 있다."],
+        options: ["유일신을 믿는다.", "메카를 성지로 한다.", "소를 신성시하여 소고기를 먹지 않는다.", "대표적인 종교 경관으로는 십자가를 세운 예배당이 있다."],
         answer: 2,
-        explanation: "힌두교는 소를 신성하게 여겨서 소고기를 먹지 않습니다. (돼지고기 안 먹는 건 이슬람교)<br><br>🍯 <b>[종교 꿀팁]</b> <b>힌두교 = 소(Cow) 사랑</b>. <b>이슬람교 = 돼지(Pig) 금지</b>."
+        explanation: "힌두교는 다신교이며, 소를 신성하게 여겨 소고기를 먹지 않습니다. (1번, 4번은 크리스트교, 2번은 이슬람교의 특징입니다.)<br><br>🍯 <b>[사회 꿀팁]</b> <b>힌두교 = 인도 = 소고기 금지</b>. (이슬람교는 돼지고기 금지)"
     },
     {
-        id: 202510418,
+        id: 2025130418,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "18. 다음에 들어갈 문화 변동의 양상은?<br>○ 한옥 구조 + 서양 성당 (섞임) ➡ ( ㉠ )<br>○ 원주민 언어 대신 식민지 언어 사용 (대체됨) ➡ ( ㉡ )",
+        passage: "○ <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>의 사례로는 전통적인 한옥 구조물에 서양의 건축 양식을 결합한 새로운 모습의 성당을 들 수 있다.<br>○ <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span>의 사례로는 라틴 아메리카 지역 원주민들이 자신들의 언어 대신에 그들을 식민 지배한 에스파냐나 포르투갈의 언어를 사용하는 것을 들 수 있다.",
+        question: "18. 다음에 들어갈 문화 변동의 양상은?",
         options: ["문화 동화, 문화 병존", "문화 병존, 문화 융합", "문화 융합, 문화 동화", "문화 융합, 문화 병존"],
         answer: 2,
-        explanation: "두 문화가 섞여 제3의 것이 되면 융합, 한쪽이 먹혀버리면 동화입니다.<br><br>🍯 <b>[문화 꿀팁]</b> <b>섞였다(짬뽕) ➡ 융합</b>. <b>원래 게 없어졌다 ➡ 동화</b>."
+        explanation: "첫 번째 사례는 한옥과 서양 양식이 섞여 '새로운' 제3의 문화를 만들었으므로 '문화 융합'입니다. 두 번째 사례는 고유의 언어를 잃어버리고 외래 문화(언어)로 완전히 대체되었으므로 '문화 동화'입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>섞여서 새것(New)</b> ➡ <b>융합</b>. <b>먹혀서 사라짐(Die)</b> ➡ <b>동화</b>. <b>따로따로 공존</b> ➡ <b>병존</b>."
     },
     {
-        id: 202510419,
+        id: 2025130419,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "19. 대화 속 '을'의 입장에 해당하는 문화 이해 태도는?<br>을: 그 나라에서는 손으로 먹는 게 전통이야. 그 사회의 맥락을 고려해야 해.",
+        passage: "<b>갑:</b> 외국에 갔더니 손으로 음식을 먹더라. 젓가락이나 포크를 쓰지 않다니, 참 비위생적이야.<br><b>을:</b> 그 나라에서는 손으로 먹는 것이 오랜 전통이고, 위생적으로 먹을 수 있는 방법도 갖춰져 있어. 그 사회의 맥락과 환경을 고려하여 문화를 이해해야 해.",
+        question: "19. 대화 속 '을'의 입장에 해당하는 문화 이해 태도는?",
         options: ["문화 사대주의", "문화 상대주의", "문화 제국주의", "자문화 중심주의"],
         answer: 1,
-        explanation: "그 나라의 입장에서 문화를 존중해주는 태도는 문화 상대주의입니다.<br><br>🍯 <b>[태도 꿀팁]</b> <b>'그럴 수 있어', '존중해'</b> ➡ <b>'상대주의'</b>."
+        explanation: "각 사회의 문화를 그 사회의 고유한 맥락(환경, 역사 등)에서 이해하고 존중하려는 태도는 '문화 상대주의'입니다. (갑은 자문화 중심주의 태도를 보이고 있습니다.)<br><br>🍯 <b>[사회 꿀팁]</b> <b>'그럴 만한 이유가 있겠지'</b> 하고 이해해 주는 것 = <b>'문화 상대주의'</b>."
     },
     {
-        id: 202510420,
+        id: 2025130420,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "20. 다문화 사회의 갈등 해결을 위한 노력으로 적절하지 않은 것은?",
-        options: ["소수 문화를 배척한다.", "다문화 교육을 강화한다.", "법과 제도적 지원을 확대한다.", "다양한 문화를 이해하고 존중한다."],
+        question: "20. 다음 중 다문화 사회의 갈등 해결을 위한 노력으로 적절하지 않은 것은?",
+        options: ["소수 문화를 배척한다.", "다문화 교육을 강화한다.", "법과 제도적 지원을 확대한다.", "다양한 문화를 이해하고 존중하는 태도를 기른다."],
         answer: 0,
-        explanation: "소수 문화를 배척(따돌림)하면 갈등이 더 심해지겠죠?<br><br>🍯 <b>[도덕 꿀팁]</b> <b>'배척', '차별', '무시'</b>는 무조건 오답입니다."
+        explanation: "다문화 사회에서 갈등을 해결하려면 서로의 문화를 존중하고 포용해야 합니다. 소수 문화를 '배척(밀어냄)'하는 것은 갈등을 심화시키는 태도입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>'배척', '차별', '무시'</b> 같은 나쁜 행동은 <b>오답</b>입니다."
     },
     {
-        id: 202510421,
+        id: 2025130421,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "21. 다음에 들어갈 용어로 가장 적절한 것은?<br>지역 축제, 지역 브랜드 개발... (    ) 전략",
+        passage: "<b>브랜드 개발을 통한 <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> 전략</b><br>○ 지역이 가진 특성을 상징물이나 디자인으로 만들어 지역의 이미지 강화<br>○ 지리적 특성을 반영한 상품이 해당 지역에서 생산·가공되었음을 표시하여 우수성 인증",
+        question: "21. 다음에 들어갈 용어로 가장 적절한 것은?",
         options: ["도시화", "산업화", "정보화", "지역화"],
         answer: 3,
-        explanation: "지역의 특색을 살려 세계화에 대응하는 것을 지역화라고 합니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>'지역'</b> 축제, <b>'지역'</b> 브랜드 ➡ <b>'지역화'</b>."
+        explanation: "지역 고유의 특성을 살려 브랜드화하고 경쟁력을 높이는 전략은 '지역화'입니다. (예: 보성 녹차, 횡성 한우 등 지리적 표시제)<br><br>🍯 <b>[사회 꿀팁]</b> <b>지역 특성, 지역 브랜드, 지리적 표시</b> ➡ <b>'지역화'</b>."
     },
     {
-        id: 202510422,
+        id: 2025130422,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "22. 다음에서 설명하는 국제 사회의 행위 주체는?<br>○ 가장 기본적인 행위 주체<br>○ 영역, 국민, 주권 보유",
+        passage: "○ 국제 사회를 구성하는 가장 기본적인 행위 주체<br>○ 일정한 영역과 국민을 바탕으로 주권을 가진 집단",
+        question: "22. 다음에서 설명하는 국제 사회의 행위 주체는?",
         options: ["국가", "국제 연합", "다국적 기업", "비정부 기구"],
         answer: 0,
-        explanation: "영토, 국민, 주권을 가진 집단은 국가입니다.<br><br>🍯 <b>[개념 꿀팁]</b> <b>국민 + 영토 + 주권</b> = <b>국가</b>의 3요소."
+        explanation: "영토, 국민, 주권을 가진 국제 사회의 가장 기본적이고 전통적인 행위 주체는 '국가'입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>영토 + 국민 + 주권</b> = <b>'나라(국가)'</b>."
     },
     {
-        id: 202510423,
+        id: 2025130423,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        image: "images/2025_1_Soc_23.png",
-        question: "23. 다음 설명에 해당하는 분쟁 지역을 지도에서 고른 것은?<br>이스라엘-팔레스타인 지역... 종교 및 민족 갈등...",
+        image: "images/2025_1_Society_23.png",
+        question: "23. 다음 설명에 해당하는 분쟁 지역을 지도의 A~D에서 고른 것은?<br><div class='passage-box'>이스라엘-팔레스타인 지역에서 발생한 종교 및 민족 간 갈등으로, 지금도 분쟁 중이다.</div>",
         options: ["A", "B", "C", "D"],
         answer: 1,
-        explanation: "이스라엘과 팔레스타인은 서아시아(중동) 지역인 B에 위치합니다.<br><br>🍯 <b>[지리 꿀팁]</b> <b>이스라엘 = 중동(B)</b>. 지중해 오른쪽 끝을 찾으세요."
+        explanation: "이스라엘과 팔레스타인 분쟁 지역은 지중해 동부 연안의 'B' 지역(서아시아)입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>이스라엘 = 지중해 오른쪽 끝</b>. 지도에서 <b>B</b> 위치를 꼭 기억하세요."
     },
     {
-        id: 202510424,
+        id: 2025130424,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "24. 다음에 들어갈 용어로 가장 적절한 것은?<br>인구가 급격하게 증가하면서 식량 부족, 빈곤 확산... (    ) 현상",
+        passage: "갑국은 사망률이 낮아졌지만 출생률은 여전히 높게 나타나며, 인구가 급격하게 증가하면서 식량 및 자원의 부족과 빈곤의 확산 등 <span class='blank-box'>( &nbsp;&nbsp;&nbsp; )</span> 현상이 나타나고 있다.",
+        question: "24. 다음에 들어갈 용어로 가장 적절한 것은?",
         options: ["고령화", "저출산", "인구 과잉", "초고령 사회"],
         answer: 2,
-        explanation: "인구가 너무 많아서(증가해서) 문제가 되는 것은 인구 과잉입니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>인구 증가 + 식량 부족</b> = 사람이 너무 많다 = <b>과잉</b>."
+        explanation: "출생률은 높고 사망률은 낮아 인구가 급증하고, 이로 인해 식량 부족 등의 문제가 발생하는 현상은 '인구 과잉'입니다. (주로 개발 도상국에서 나타납니다.)<br><br>🍯 <b>[사회 꿀팁]</b> <b>인구 급증 + 식량 부족</b> ➡ 사람이 너무 많다! ➡ <b>'인구 과잉'</b>."
     },
     {
-        id: 202510425,
+        id: 2025130425,
         year: "2025",
         round: "1",
         level: "고졸",
         subject: "사회",
-        question: "25. 다음에서 설명하는 자원으로 옳은 것은?<br>○ 냉동 액화 기술, 수송선<br>○ 가정용 연료, 대기 오염 적음",
+        passage: "○ 냉동 액화 기술의 발달과 수송선의 개발로 소비량이 증가함.<br>○ 가정용 및 산업용 연료로 사용되는 비율이 높으며, 다른 화석 연료에 비해 연소 시 대기 오염 물질의 배출량이 적은 편임.",
+        question: "25. 다음에서 설명하는 자원으로 옳은 것은?",
         options: ["석유", "석탄", "원자력", "천연가스"],
         answer: 3,
-        explanation: "액화해서 배로 실어 나르는 깨끗한 가스, LNG(액화 천연가스)입니다.<br><br>🍯 <b>[자원 꿀팁]</b> <b>'도시가스', '깨끗함', '냉동 액화'</b> ➡ <b>'천연가스'</b>."
+        explanation: "냉동 액화 기술(LNG)로 수송이 가능해졌고, 오염 물질 배출이 적어 청정 에너지로 불리는 화석 연료는 '천연가스'입니다.<br><br>🍯 <b>[사회 꿀팁]</b> <b>냉동 액화 기술 + 깨끗함(오염 적음)</b> ➡ <b>'천연가스'</b>. (도시가스 생각하세요!)"
     },
 
     // ============================================================
@@ -7799,6 +7842,7 @@ const problemDB = [
         explanation: "우리(조선) 물건을 쓰자는 운동입니다.<br><br>🍯 <b>[구호 꿀팁]</b> <b>'조선'</b> 사람은 <b>'조선'</b> 것!"
     }
 ];
+
 
 
 
