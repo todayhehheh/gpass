@@ -727,106 +727,112 @@ const problemDB = [
         explanation: "글쓰기 클럽에서 워크숍을 여니 관심 있으면 참여하라(join us)고 권유하는 글입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Join us(함께하자/가입해라)</b>가 보이면 무조건 <b>'모집'</b>입니다."
     },
     {
-        id: 202520317,
+        id: 2025230317,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        image: "images/2025_2_Eng_17.png",
-        question: "17. 다음 수영장 안내문의 내용과 일치하지 않는 것은?<br>* Drinks can be purchased at the pool.",
+        passage: "<b>Swimming Pool Information</b><br>• Location: 9th floor<br>• Operating hours: 6:00 a.m. ~ 10:00 p.m.<br>• Free for all hotel guests<br>• Must wear a swimming cap<br>• Drinks can be purchased at the pool.",
+        question: "17. 다음 수영장 안내문의 내용과 일치하지 않는 것은?",
         options: ["9층에 위치해 있다.", "오전 6시부터 오후 10시까지 운영한다.", "수영모를 착용해야 한다.", "음료는 판매하지 않는다."],
         answer: 3,
-        explanation: "Purchased(구매되다) ➡ 살 수 있다는 뜻입니다. '판매하지 않는다'는 틀렸습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Purchase = Buy = 사다</b>. P-B(피비)로 외우세요!"
+        explanation: "'Drinks can be purchased'는 음료를 구매할 수 있다는 뜻입니다. 판매하지 않는다는 4번은 틀린 내용입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Purchase = Buy = 사다</b>. 수동태(be purchased)니까 '판매된다'는 뜻!"
     },
     {
-        id: 202520318,
+        id: 2025230318,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "18. 다음 The Friendly Market에 대한 설명과 일치하지 않는 것은?<br>The market is held on Sundays...",
+        passage: "The Friendly Market opens near City Hall. You can buy fresh vegetables, organic snacks, and handmade goods there. Anyone who comes to the market can get a free face painting. The market is held on Sundays from 8 a.m. to 3 p.m.",
+        question: "18. 다음 The Friendly Market에 대한 설명과 일치하지 않는 것은?",
         options: ["시청 근처에서 열린다.", "유기농 간식이 판매된다.", "페이스 페인팅은 무료이다.", "일요일은 휴무일이다."],
         answer: 3,
-        explanation: "On Sundays(일요일에) 열린다고 했습니다. 휴무(쉬는 날)가 아닙니다.<br><br>🍯 <b>[독해 꿀팁]</b> 일치하지 않는 문제는 <b>숫자(시간)나 고유명사(요일)</b>를 먼저 보세요. Sunday(일요일)가 핵심!"
+        explanation: "마지막 문장에 'held on Sundays(일요일에 열린다)'라고 되어 있습니다. 휴무일이라는 4번은 틀렸습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Held(열리다/개최되다)</b> ↔ <b>Closed(닫다/휴무)</b>. 반대말을 주의하세요!"
     },
     {
-        id: 202520319,
+        id: 2025230319,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "19. 다음 글의 주제로 가장 적절한 것은?<br>Do you ever feel like you can't control your anger?",
+        passage: "Do you ever feel like you can't control your anger? Here are some tips for you. First, take a deep breath when you feel upset. This helps calm your mind. Second, count to ten before reacting. It gives you time to think and respond calmly. Talking to someone you trust can also help.",
+        question: "19. 다음 글의 주제로 가장 적절한 것은?",
         options: ["미래에 유망한 직업", "예술 작품 창조 과정", "분노를 조절하는 방법", "기후 변화가 가속화하는 이유"],
         answer: 2,
-        explanation: "Control(조절하다) your anger(너의 화/분노). 첫 문장에 답이 있습니다.<br><br>🍯 <b>[독해 꿀팁]</b> 주제 찾기 문제는 <b>첫 문장</b>에 답이 있을 확률 90%! <b>Anger(앵그리버드=화)</b>만 알아도 맞힙니다."
+        explanation: "첫 문장에서 'control your anger(화 조절하기)'에 대해 묻고, 그에 대한 조언(tips)을 주는 글입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Anger(화/분노)</b>, <b>Calm(진정하다)</b> ➡ <b>'분노 조절'</b>."
     },
     {
-        id: 202520320,
+        id: 2025230320,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "20. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?<br>Upcycling... you can (    ) trash.",
+        passage: "Upcycling can turn old items into something new and useful. By reusing used objects for different purposes, you can <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span> trash. For example, jeans you don't wear anymore can be transformed into bags or wallets. Through upcycling, you can add value to unwanted items.",
+        question: "20. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?",
         options: ["order", "teach", "reduce", "punish"],
         answer: 2,
-        explanation: "업사이클링(재활용)을 하면 쓰레기(Trash)를 줄일 수(Reduce) 있겠죠?<br><br>🍯 <b>[단어 꿀팁]</b> <b>Reduce = 줄이다</b>. 쓰레기(Trash)와 가장 잘 어울리는 짝꿍입니다."
+        explanation: "업사이클링(재활용)을 하면 쓰레기(trash)를 줄일 수(reduce) 있습니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Reduce = 줄이다</b>. 환경 지문에서 <b>Trash(쓰레기)</b> 짝꿍은 <b>Reduce</b>입니다."
     },
     {
-        id: 202520321,
+        id: 2025230321,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "21. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?<br>countries are trying to (    ) policies that will help increase birth rates.",
+        passage: "Many countries are facing a problem with low birth rates. Fewer babies are being born each year. This can lead to a smaller working population in the future. Thus, countries are trying to <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span> policies that will help increase birth rates.",
+        question: "21. 다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?",
         options: ["cut", "stop", "forget", "develop"],
         answer: 3,
-        explanation: "출산율을 높이기 위한 정책을 개발(Develop)하고 만들어야 합니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Develop = 개발하다/발전시키다</b>. 좋은 건(정책, 기술) 무조건 Develop입니다."
+        explanation: "저출산 문제를 해결하기 위해 출산율을 높이는 정책을 개발(develop)하고 만들어야 합니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Develop = 개발하다/발전시키다</b>. 문제 해결을 위한 <b>정책(Policy)</b>은 <b>Develop</b>해야 합니다."
     },
     {
-        id: 202520322,
+        id: 2025230322,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "22. 글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?<br><b>[There, some sea animals eat this waste.]</b>",
+        passage: "Plastic is a useful material but can be harmful to the environment. ( ① ) Plastic waste takes decades to break down, so it stays on the Earth for a long time. ( ② ) Moreover, plastic waste is often washed out to the ocean. ( ③ ) Eventually these animals may end up on our dinner table. ( ④ )",
+        question: "22. 글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?<br><br><b>[There, some sea animals eat this waste.]</b>",
         options: ["①", "②", "③", "④"],
         answer: 2,
-        explanation: "There(거기에서)는 앞 문장의 'ocean(바다)'을 가리킵니다. 바다 이야기가 나온 직후(③)가 적절합니다.<br><br>🍯 <b>[순서 꿀팁]</b> <b>There, It, They</b> 같은 지시어가 나오면 <b>앞 문장에 그 장소나 물건</b>이 있어야 합니다."
+        explanation: "주어진 문장의 'There(거기서)'는 앞 문장의 'the ocean(바다)'을 가리킵니다. 또한 뒤 문장의 'these animals(이 동물들)'는 주어진 문장의 'sea animals(바다 동물들)'를 가리킵니다. 따라서 바다 이야기 뒤인 3번이 적절합니다.<br><br>🍯 <b>[순서 꿀팁]</b> <b>There(거기) = Ocean(바다)</b>, <b>These animals = Sea animals</b>. 꼬리에 꼬리를 무는 단어를 찾으세요!"
     },
     {
-        id: 202520323,
+        id: 2025230323,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        question: "23. 다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?<br>However, there are several types of injuries...",
+        passage: "Marathons are exciting events that attract thousands of runners every year. Runners train for months to prepare for the race. Participating in a marathon not only promotes physical fitness, but also provides a sense of accomplishment. However, there are several types of injuries people can get when they run a marathon.",
+        question: "23. 다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?",
         options: ["마라톤으로 인한 부상의 유형", "마라톤 경기 규칙의 변천사", "육상 선수를 위한 식단", "정신 건강의 중요성"],
         answer: 0,
-        explanation: "마지막 문장이 '여러 가지 부상(Injuries)이 있다'로 끝났으니, 그 뒤엔 어떤 부상인지 설명해야 합니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>'뒤에 이어질 내용'</b>은 <b>마지막 문장</b>만 해석하면 됩니다. Injuries=부상."
+        explanation: "마지막 문장에서 '여러 종류의 부상(several types of injuries)'이 있다고 언급하며 끝났으므로, 그 뒤에는 구체적인 부상의 종류가 나와야 합니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>'뒤에 이어질 내용'</b>은 <b>마지막 문장</b>만 해석하면 됩니다. <b>Injuries = 부상</b>."
     },
     {
-        id: 202520324,
+        id: 2025230324,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        passage: "<b>[24~25] 다음 글을 읽고 물음에 답하시오.</b><br><br>In order to (    ) stress from harming your life... Stress management is the key...",
+        passage: "Everyone feels stress sometimes, especially when life gets busy. But too much stress can lead to various problems such as sleeplessness and anxiety. In order to <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span> stress from harming your life, you need to manage it well. Stress management is the key to your well-being in the modern world.",
         question: "24. 윗글의 빈칸에 들어갈 말로 가장 적절한 것은?",
         options: ["feed", "raise", "collect", "prevent"],
         answer: 3,
-        explanation: "스트레스가 삶을 해치는 것을 막아야(Prevent) 합니다.<br><br>🍯 <b>[단어 꿀팁]</b> <b>Prevent = 막다/예방하다</b>. 나쁜 것(Stress, Accident)은 Prevent 해야 합니다."
+        explanation: "스트레스가 삶을 해치는 것을 '막기(prevent)' 위해서는 관리가 필요합니다. 'prevent A from B'는 'A가 B하는 것을 막다'라는 중요한 숙어입니다.<br><br>🍯 <b>[숙어 꿀팁]</b> <b>Prevent A from B</b> (A가 B하는 걸 막다). <b>Stress(나쁜 것)</b>를 <b>Prevent(막다)</b>해야 합니다."
     },
     {
-        id: 202520325,
+        id: 2025230325,
         year: "2025",
         round: "2",
         level: "고졸",
         subject: "영어",
-        passage: "<b>[24~25] 다음 글을 읽고 물음에 답하시오.</b><br><br>In order to (    ) stress from harming your life... Stress management is the key...",
+        passage: "Everyone feels stress sometimes, especially when life gets busy. But too much stress can lead to various problems such as sleeplessness and anxiety. In order to <span class='blank-box'> &nbsp;&nbsp;&nbsp; </span> stress from harming your life, you need to manage it well. Stress management is the key to your well-being in the modern world.",
         question: "25. 윗글의 주제로 가장 적절한 것은?",
         options: ["스트레스 관리의 중요성", "봉사 활동의 중요성", "수면 부족의 위험성", "다양한 운동 방법"],
         answer: 0,
-        explanation: "글 전체가 Stress(스트레스)와 Management(관리)에 대한 이야기입니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>반복되는 단어</b>가 주제입니다. Stress가 계속 나오죠? 그럼 답은 1번!"
+        explanation: "글 전반에서 스트레스의 문제점과 이를 관리(manage)하는 것이 행복(well-being)의 열쇠라고 강조하고 있습니다.<br><br>🍯 <b>[독해 꿀팁]</b> <b>Manage(관리하다)</b>, <b>Key(열쇠/중요)</b>. 스트레스를 관리하는 게 중요하다는 내용입니다."
     },
 
     // ============================================================
@@ -7549,6 +7555,7 @@ const problemDB = [
         explanation: "우리(조선) 물건을 쓰자는 운동입니다.<br><br>🍯 <b>[구호 꿀팁]</b> <b>'조선'</b> 사람은 <b>'조선'</b> 것!"
     }
 ];
+
 
 
 
