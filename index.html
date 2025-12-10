@@ -6,40 +6,37 @@
     <title>검정고시 패스 (Pass)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         body { font-family: "Pretendard Variable", Pretendard, sans-serif; }
         .hidden { display: none; }
-        .passage-box {
-    /* 1. 배경: 차가운 회색 대신 따뜻한 종이색 */
-    background-color: #fdfbf7; 
-    
-    /* 2. 테두리: 왼쪽만 굵게 강조 (포인트 컬러) */
-    border: 1px solid #e2e8f0;
-    border-left: 5px solid #64748b; 
-    
-    /* 3. 폰트: 지문은 '명조체' 계열로 진지하게 (바탕체 등) */
-    font-family: 'KoPub Batang', 'Batang', serif; 
-    
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.05rem; /* 글자 살짝 키움 */
-    line-height: 1.8;   /* 줄 간격 넓게 */
-    color: #2d3748;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 살짝 그림자 */
-}
-
-/* (옵션) 지문 안에 '지문'이라는 뱃지 달기 */
-.passage-box::before {
-    content: "📜 지문";
-    display: block;
-    font-family: "Pretendard Variable", sans-serif; /* 뱃지는 고딕 */
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #64748b;
-    margin-bottom: 0.5rem;
-}
         
+        /* 지문 박스 디자인 업그레이드 */
+        .passage-box {
+            background-color: #fdfbf7; /* 따뜻한 종이색 */
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #64748b; /* 왼쪽 포인트 선 */
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #2d3748;
+            font-family: 'Noto Serif KR', serif; /* 명조체 계열 */
+            white-space: pre-line; /* 줄바꿈 자동 적용 */
+        }
+
+        /* 문제 텍스트 강조 */
+        .question-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1e293b;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
         .fade-in { animation: fadeIn 0.3s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -47,7 +44,9 @@
 <body class="bg-slate-100 text-slate-800">
 
     <header class="bg-white border-b border-slate-200 h-16 flex items-center justify-center sticky top-0 z-50">
-        <h1 class="text-xl font-bold text-blue-600 cursor-pointer" onclick="goHome()">🎓 검정고시 패스</h1>
+        <h1 class="text-xl font-bold text-blue-600 cursor-pointer flex items-center gap-2" onclick="goHome()">
+            🎓 검정고시 패스
+        </h1>
     </header>
 
     <main class="max-w-4xl mx-auto px-4 py-8">
@@ -96,8 +95,6 @@
                             <option value="2025">2025년</option>
                             <option value="2024">2024년</option>
                             <option value="2023">2023년</option>
-                            <option value="2022">2022년</option>
-                            <option value="2021">2021년</option>
                         </select>
                     </div>
                     <div>
@@ -132,12 +129,13 @@
             <div id="score-board" class="hidden bg-blue-600 text-white rounded-xl p-6 text-center mb-6 shadow-lg">
                 <p class="text-blue-100 text-sm mb-1">나의 시험 결과</p>
                 <div class="text-4xl font-extrabold mb-2"><span id="final-score">0</span>점</div>
-                <p class="text-sm opacity-80" id="score-detail"></p>
-                <button onclick="goHome()" class="mt-4 bg-white text-blue-600 text-xs px-4 py-2 rounded-lg font-bold hover:bg-blue-50">다른 과목 풀기</button>
+                <div id="result-message" class="bg-white/20 rounded-lg p-3 mb-3 text-sm font-medium"></div>
+                <p class="text-sm opacity-80 mb-4" id="score-detail"></p>
+                <button onclick="goHome()" class="bg-white text-blue-600 text-xs px-4 py-2 rounded-lg font-bold hover:bg-blue-50">다른 과목 풀기</button>
             </div>
 
             <div class="flex justify-between items-center mb-6">
-                <span class="font-bold text-blue-600" id="quiz-info-text"></span>
+                <span class="font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-lg text-sm" id="quiz-info-text"></span>
                 <button onclick="goHome()" class="text-sm text-slate-400 hover:text-slate-600">종료하기</button>
             </div>
 
@@ -180,47 +178,38 @@
             const round = document.getElementById('sel-round').value;
             const subject = document.getElementById('sel-subject').value;
 
-            // data.js가 잘 로드되었는지 확인
+            // data.js 로드 확인
             if (typeof problemDB === 'undefined') {
                 alert("문제 데이터(data.js)를 찾을 수 없습니다.\n파일이 같은 폴더에 있는지 확인해주세요.");
                 return;
             }
 
-            // 필터링
+            // 문제 필터링
             currentProblems = problemDB.filter(p => p.year === year && p.round === round && p.subject === subject);
 
             if (currentMode === 'mock') {
                 currentProblems.sort(() => Math.random() - 0.5);
             }
 
-            if (currentProblems.length === 0) {
-                // 1. 문제 화면을 일단 보여줍니다.
-                showPage('page-quiz');
-    
-                // 2. 제목을 "준비 중"으로 바꿉니다.
-                document.getElementById('quiz-info-text').innerText = "🚧 데이터 준비 중";
-    
-                // 3. 내용을 예쁜 안내 문구로 채웁니다.
-                const container = document.getElementById('quiz-container');
-                container.innerHTML = `
-                    <div class="text-center py-20">
-                        <div class="text-6xl mb-4">🙏</div>
-                        <h3 class="text-xl font-bold mb-2">아직 문제가 등록되지 않았어요.</h3>
-                        <p class="text-slate-500 mb-6">조금만 기다려주세요! 곧 업데이트 될 예정입니다.</p>
-                        <button onclick="goHome()" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold">돌아가기</button>
-                    </div>
-                `;
-                // 4. 점수판은 숨깁니다.
-                document.getElementById('score-board').classList.add('hidden');
-    return;
-}
-
             showPage('page-quiz');
-            document.getElementById('quiz-info-text').innerText = `${year}년 ${round}차 ${subject} (${currentMode === 'study' ? '공부' : '시험'})`;
+            document.getElementById('quiz-info-text').innerText = `${year}년 ${round}차 ${subject}`;
             
             const container = document.getElementById('quiz-container');
             container.innerHTML = "";
             document.getElementById('score-board').classList.add('hidden');
+
+            // ⚠️ 데이터가 없을 때 안내 화면
+            if (currentProblems.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-20">
+                        <div class="text-6xl mb-4">🚧</div>
+                        <h3 class="text-xl font-bold mb-2">아직 문제가 등록되지 않았어요.</h3>
+                        <p class="text-slate-500 mb-6">데이터를 준비 중입니다. 다른 과목을 선택해주세요!</p>
+                        <button onclick="goHome()" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold">돌아가기</button>
+                    </div>
+                `;
+                return;
+            }
 
             if (currentMode === 'study') {
                 studyIndex = 0;
@@ -230,6 +219,7 @@
             }
         }
 
+        // [모드 1] 한 문제씩 풀기 (공부 모드)
         function renderStudyProblem(container) {
             if (studyIndex >= currentProblems.length) {
                 container.innerHTML = `<div class="text-center py-20"><h3 class="text-2xl font-bold mb-4">학습 완료! 🎉</h3><button onclick="goHome()" class="bg-blue-600 text-white px-6 py-2 rounded-xl">처음으로</button></div>`;
@@ -237,23 +227,32 @@
             }
             const p = currentProblems[studyIndex];
             
+            // ✅ 배치 순서: 질문 -> 이미지 -> 지문 -> 보기
             let html = `
                 <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <div class="mb-4 text-sm font-bold text-blue-600">문제 ${studyIndex + 1} / ${currentProblems.length}</div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">문제 ${studyIndex + 1} / ${currentProblems.length}</span>
+                    </div>
+
+                    <h3 class="question-text">${p.question}</h3>
+
+                    ${p.image ? `<div class="flex justify-center mb-4"><img src="${p.image}" onerror="this.style.display='none'" class="w-full max-w-md h-auto rounded-lg border border-slate-100 shadow-sm"></div>` : ''}
+
                     ${p.passage ? `<div class="passage-box">${p.passage}</div>` : ''}
-                    ${p.image ? `<img src="${p.image}" onerror="this.style.display='none'" class="w-full max-w-md h-auto mb-4 rounded border border-slate-100 mx-auto">` : ''}
-                    <h3 class="text-xl font-bold mb-6 leading-relaxed text-slate-800">${p.question}</h3>
+
                     <div class="space-y-3 mb-6">
                         ${p.options.map((opt, idx) => `
                             <button onclick="checkStudyAnswer(${idx}, ${p.answer}, this)" class="w-full text-left p-4 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium text-slate-700 flex items-start">
-                                <span class="mr-3 font-bold text-slate-400">${idx+1}.</span><span>${opt}</span>
+                                <span class="mr-3 font-bold text-slate-400 bg-slate-100 w-6 h-6 flex items-center justify-center rounded-full text-xs">${idx+1}</span>
+                                <span>${opt}</span>
                             </button>
                         `).join('')}
                     </div>
-                    <div id="explanation-${studyIndex}" class="hidden bg-slate-50 p-5 rounded-xl border border-slate-200">
+
+                    <div id="explanation-${studyIndex}" class="hidden bg-blue-50 p-5 rounded-xl border border-blue-100">
                         <p class="font-bold text-lg mb-2" id="result-msg-${studyIndex}"></p>
-                        <p class="text-slate-600 text-sm mb-4 border-t border-slate-200 pt-2">${p.explanation}</p>
-                        <button onclick="nextStudy()" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-700 w-full md:w-auto">다음 문제 →</button>
+                        <div class="text-slate-700 text-sm leading-relaxed">${p.explanation}</div>
+                        <button onclick="nextStudy()" class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-700 w-full md:w-auto transition shadow-lg shadow-blue-500/30">다음 문제 →</button>
                     </div>
                 </div>`;
             container.innerHTML = html;
@@ -261,15 +260,21 @@
 
         function checkStudyAnswer(selected, correct, btn) {
             const expBox = document.getElementById(`explanation-${studyIndex}`);
-            if(!expBox.classList.contains('hidden')) return;
+            if(!expBox.classList.contains('hidden')) return; // 이미 풀었으면 중복 클릭 방지
+            
             expBox.classList.remove('hidden');
             const msg = document.getElementById(`result-msg-${studyIndex}`);
+            
             if (selected === correct) {
-                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-900');
                 msg.innerHTML = "<span class='text-green-600'>정답입니다! ⭕</span>";
             } else {
-                btn.classList.add('bg-red-50', 'border-red-500', 'text-red-800');
+                btn.classList.add('bg-red-50', 'border-red-500', 'text-red-900');
                 msg.innerHTML = "<span class='text-red-600'>틀렸습니다. ❌</span>";
+                
+                // 정답 버튼도 표시해주기
+                const buttons = btn.parentElement.querySelectorAll('button');
+                buttons[correct].classList.add('bg-green-50', 'border-green-500', 'text-green-700');
             }
         }
 
@@ -278,66 +283,87 @@
             renderStudyProblem(document.getElementById('quiz-container'));
         }
 
+        // [모드 2] 시험지처럼 풀기 (시험 모드)
         function renderExamList(container) {
             let html = `<div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 divide-y divide-slate-100">`;
+            
             currentProblems.forEach((p, idx) => {
-                // 연속된 지문 생략 로직
-                let showPassage = true;
-                if (idx > 0 && currentProblems[idx-1].passage === p.passage && p.passage !== "") {
-                    showPassage = false;
-                }
-
+                // ✅ 배치 순서: 질문 -> 이미지 -> 지문 -> 보기
                 html += `
                     <div class="py-10 first:pt-0" id="prob-box-${idx}">
-                        <div class="text-slate-400 font-bold text-sm mb-4">문제 ${idx + 1}</div>
-                        ${(p.passage && showPassage) ? `<div class="passage-box mb-6">${p.passage}</div>` : ''}
-                        ${p.image ? `<img src="${p.image}" onerror="this.style.display='none'" class="w-full max-w-md h-auto mb-4 rounded border border-slate-100">` : ''}
-                        <h3 class="text-lg font-bold mb-6 text-slate-900">${p.question}</h3>
+                        <div class="text-slate-400 font-bold text-sm mb-2">문제 ${idx + 1}</div>
+                        
+                        <h3 class="question-text">${p.question}</h3>
+
+                        ${p.image ? `<div class="mb-4"><img src="${p.image}" onerror="this.style.display='none'" class="w-full max-w-md h-auto rounded-lg border border-slate-100"></div>` : ''}
+
+                        ${p.passage ? `<div class="passage-box mb-6">${p.passage}</div>` : ''}
+
                         <div class="space-y-2">
                             ${p.options.map((opt, oIdx) => `
-                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 cursor-pointer">
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 cursor-pointer border border-transparent hover:border-slate-200 transition">
                                     <input type="radio" name="prob_${idx}" value="${oIdx}" class="w-5 h-5 text-blue-600 border-slate-300 focus:ring-blue-500">
-                                    <span class="text-slate-700">${opt}</span>
+                                    <span class="text-slate-700 font-medium">${opt}</span>
                                 </label>
                             `).join('')}
                         </div>
-                        <div id="exam-feedback-${idx}" class="hidden mt-4 p-4 bg-slate-50 rounded-lg text-sm border border-slate-200">
-                            <p class="font-bold text-slate-800 mb-1">정답: ${p.options[p.answer]}</p>
-                            <p class="text-slate-600">${p.explanation}</p>
+
+                        <div id="exam-feedback-${idx}" class="hidden mt-6 p-5 bg-slate-50 rounded-xl text-sm border border-slate-200">
+                            <p class="font-bold text-slate-800 mb-2 text-base">정답: <span class="text-blue-600">${p.options[p.answer]}</span></p>
+                            <div class="text-slate-600 leading-relaxed">${p.explanation}</div>
                         </div>
                     </div>`;
             });
-            html += `<div class="pt-8 text-center"><button onclick="gradeExam()" class="bg-blue-600 text-white px-12 py-4 rounded-xl font-bold text-xl hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition w-full md:w-auto">채점하기</button></div></div>`;
+            
+            html += `<div class="pt-8 text-center">
+                <button onclick="gradeExam()" class="bg-blue-600 text-white px-12 py-4 rounded-xl font-bold text-xl hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition w-full md:w-auto">채점하기</button>
+            </div></div>`;
             container.innerHTML = html;
         }
 
         function gradeExam() {
             if(!confirm("제출하시겠습니까?")) return;
+            
             let correctCount = 0;
             currentProblems.forEach((p, idx) => {
                 const radios = document.getElementsByName(`prob_${idx}`);
                 let selected = -1;
                 let box = document.getElementById(`prob-box-${idx}`);
+                
                 for(let r of radios) { if(r.checked) selected = parseInt(r.value); }
                 
+                // 해설 보이기
                 document.getElementById(`exam-feedback-${idx}`).classList.remove('hidden');
                 
+                // 정오답 표시
                 if(selected === p.answer) {
                     correctCount++;
-                    box.classList.add('bg-green-50/50'); 
+                    box.classList.add('bg-green-50/30'); // 맞으면 연한 초록 배경
+                    // 맞았다는 표시 아이콘 추가
+                    box.querySelector('.text-slate-400').innerHTML += " <span class='text-green-600 ml-2'>⭕</span>";
                 } else {
-                    box.classList.add('bg-red-50/50'); 
+                    box.classList.add('bg-red-50/30'); // 틀리면 연한 빨강 배경
+                    box.querySelector('.text-slate-400').innerHTML += " <span class='text-red-600 ml-2'>❌</span>";
                 }
             });
+
             const score = Math.round((correctCount / currentProblems.length) * 100);
+            
+            // 점수에 따른 멘트
+            let msg = "";
+            if (score === 100) msg = "💯 완벽해요! 이 과목은 마스터하셨네요! 축하합니다!";
+            else if (score >= 80) msg = "😲 와! 고득점이에요! 합격은 물론 대학 진학까지 충분합니다.";
+            else if (score >= 60) msg = "🎉 합격권입니다! 헷갈렸던 문제만 다시 보면 완벽할 거예요.";
+            else if (score >= 40) msg = "🔥 절반이나 왔어요! 자주 나오는 유형만 조금 더 익히면 금방 60점 넘어요.";
+            else msg = "🌱 시작이 반이에요. 틀린 문제 해설을 읽어보는 것부터가 진짜 공부입니다! 화이팅!";
+
             document.getElementById('score-board').classList.remove('hidden');
             document.getElementById('final-score').innerText = score;
+            document.getElementById('result-message').innerText = msg;
             document.getElementById('score-detail').innerText = `총 ${currentProblems.length}문제 중 ${correctCount}문제 정답`;
+            
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
-
 </html>
-
-
