@@ -10,14 +10,34 @@
         body { font-family: "Pretendard Variable", Pretendard, sans-serif; }
         .hidden { display: none; }
         .passage-box {
-    background-color: #f8fafc;
-    padding: 1.2rem;
-    border-radius: 0.5rem;
+    /* 1. 배경: 차가운 회색 대신 따뜻한 종이색 */
+    background-color: #fdfbf7; 
+    
+    /* 2. 테두리: 왼쪽만 굵게 강조 (포인트 컬러) */
     border: 1px solid #e2e8f0;
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: #334155;
+    border-left: 5px solid #64748b; 
+    
+    /* 3. 폰트: 지문은 '명조체' 계열로 진지하게 (바탕체 등) */
+    font-family: 'KoPub Batang', 'Batang', serif; 
+    
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem; /* 글자 살짝 키움 */
+    line-height: 1.8;   /* 줄 간격 넓게 */
+    color: #2d3748;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 살짝 그림자 */
+}
+
+/* (옵션) 지문 안에 '지문'이라는 뱃지 달기 */
+.passage-box::before {
+    content: "📜 지문";
+    display: block;
+    font-family: "Pretendard Variable", sans-serif; /* 뱃지는 고딕 */
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #64748b;
+    margin-bottom: 0.5rem;
 }
         
         .fade-in { animation: fadeIn 0.3s ease-in-out; }
@@ -319,4 +339,5 @@
 </body>
 
 </html>
+
 
